@@ -4,10 +4,13 @@
       <w>djikstra</w>
       <w>hashmap</w>
       <w>hnex</w>
+      <w>logn</w>
       <w>newarr</w>
       <w>pnex</w>
       <w>qsort</w>
       <w>shortestpath</w>
+      <w>siftdown</w>
+      <w>siftup</w>
       <w>unsortedlist</w>
       <w>warshall</w>
     </words>
