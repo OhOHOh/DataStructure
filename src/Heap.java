@@ -94,6 +94,7 @@ public class Heap {
         /**
          * 使用 siftup 的方法来构建 堆, 时间复杂度是 O(n*logn)
          * 在输入数据的时候就进行排序
+         * 从空的堆开始, 然后依次往堆中插入每一个元素, 插入第 i 个元素是 O(logi), 整体复杂度是 O(NlogN)
          */
         Scanner in = new Scanner(System.in);
         for (int i = 0; i < heap_length; i++) {
