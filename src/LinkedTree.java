@@ -183,7 +183,6 @@ public class LinkedTree {
 //        }
 //    }
 
-
     private static <T> int getTreeDepthRec(TreeNode<T> root) {
         /**
          * getTreeDepth: 判断树的深度
@@ -246,6 +245,29 @@ public class LinkedTree {
         int rightNum = getLeafNumRec(root.rightchild);
 
         return leftNum+rightNum;
+    }
+
+
+    private static <T> TreeNode reConstructTree(T[] pre, T[] in) {
+        /**
+         * 给出树的 前序遍历pre 以及 中序遍历in, 要求重建这棵树
+         * https://www.nowcoder.com/practice/8a19cbe657394eeaac2f6ea9b0f6fcf6?tpId=13&tqId=11157&tPage=1&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking
+         */
+        TreeNode root = cat(pre, 0, pre.length-1, in, 0, in.length-1);
+        return root;
+    }
+    private static <T> TreeNode cat(T[] pre, int preStart, int preEnd, T[] in, int inStart, int inEnd) {
+        if (preStart > preEnd || inStart > inEnd) {
+            return null;
+        }
+        TreeNode root = new TreeNode(pre[preStart]);
+        for (int i = inStart; i <= inEnd; i++) {
+            if (pre[preStart] == in[i]) {
+                root.leftchild = cat(pre, preStart+1, i-inStart+preStart, in, inStart, i-1);
+                root.rightchild = cat(pre, preStart+1+i-inStart, preEnd, in, i+1, inEnd);
+            }
+        }// for
+        return root;
     }
 
 }
