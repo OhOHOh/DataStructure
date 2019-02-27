@@ -542,4 +542,42 @@ public class LinkedListSummary {
         return low;
     }
 
+    //========================Java 数组实现归并排序========================
+    private static void merge_sort(int[] arr, int low, int high) {
+        /**
+         * 归并排序, 应该是先分解, 然后再归并(调用 merge)
+         */
+        int mid = (low+high) / 2;
+        if (low < high) {
+            merge_sort(arr, low, mid);
+            merge_sort(arr, mid+1, high);
+            merge(arr, low, mid, high);
+        }
+    }
+    private static void merge(int[] a, int low, int mid, int high) {
+        /**
+         * 将数组 a[low, ..., mid] 和数组 a[mid+1, ..., high] 进行合并
+         */
+        int[] temp = new int[high-low+1];
+        int i=low, j=mid+1;
+        int k = 0;
+        // 将较小的数字先移到新数组中, 从小到大排序
+        while (i<=mid && j<=high) {
+            if (a[i] < a[j]) {
+                temp[k++] = a[i++];
+            } else {
+                temp[k++] = a[j++];
+            }
+        }// while
+        while (i <= mid) {
+            temp[k++] = a[i++];
+        }
+        while (j <= high) {
+            temp[k++] = a[j++];
+        }
+        // 将新数组覆盖 a 中 low-high 的部分
+        for (int x = 0; x <= temp.length; x++) {
+            a[x+low] = temp[x];
+        }
+    }
 }

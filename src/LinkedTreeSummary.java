@@ -147,9 +147,26 @@ public class LinkedTreeSummary {
         }
         return null;
     }
-
-
-
+    public TreeNode reConstructTree(int[] pre, int[] in) {
+        /**
+         * 给出一颗二叉树的前序遍历与中序遍历, 重建这棵树
+         */
+        TreeNode root = reConstructTree_fun(pre, 0, pre.length-1, in, 0, in.length-1);
+        return root;
+    }
+    private TreeNode reConstructTree_fun(int[] pre, int preStart, int preEnd, int[] in, int inStart, int inEnd) {
+        if (preStart > preEnd || inStart > inEnd) {
+            return null;
+        }
+        TreeNode root = new TreeNode(pre[preStart]);
+        for (int i = inStart; i <= inEnd; i++) {
+            if (pre[preStart] == in[i]) {
+                root.left = reConstructTree_fun(pre, preStart+1, i-inStart+preStart, in, inStart, i-1);
+                root.right = reConstructTree_fun(pre, preStart+1+i-inStart, preEnd, in, i+1, inEnd);
+            }
+        }// for
+        return root;
+    }
 
 
 }
