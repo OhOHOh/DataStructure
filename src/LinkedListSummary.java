@@ -598,5 +598,21 @@ public class LinkedListSummary {
             }
         }
     }
+    //========================Java 数组实现选择排序========================
+    public static void selectSort(int[] a) {
+        int len = a.length;
+        int temp;
+        for (int i = 0; i < len-1; i++) {
+            int k = i; //记录在这轮循环中最小值的下标
+            for (int j = i+1; j < len; j++) {
+                if (a[j] < a[k]) {
+                    k = j;
+                }
+            }
+            temp = a[k];
+            a[k] = a[i];
+            a[i] = temp;
+        }
+    }
 
 }

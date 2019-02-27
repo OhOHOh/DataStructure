@@ -34,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/src/LinkedListSummary.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="685">
-              <caret line="599" column="5" lean-forward="true" selection-start-line="599" selection-start-column="5" selection-end-line="599" selection-end-column="5" />
+              <caret line="601" column="43" lean-forward="false" selection-start-line="601" selection-start-column="43" selection-end-line="601" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#920#924#0" expanded="false" />
@@ -64,6 +64,7 @@
                 <element signature="method#merge_sort#0;class#LinkedListSummary#0" expanded="false" />
                 <element signature="method#merge#0;class#LinkedListSummary#0" expanded="false" />
                 <element signature="method#bubbleSort#0;class#LinkedListSummary#0" expanded="false" />
+                <element signature="method#selectSort#0;class#LinkedListSummary#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -587,6 +588,7 @@
             <element signature="method#merge_sort#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#merge#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#bubbleSort#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#selectSort#0;class#LinkedListSummary#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -649,6 +651,7 @@
             <element signature="method#merge_sort#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#merge#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#bubbleSort#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#selectSort#0;class#LinkedListSummary#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -710,6 +713,7 @@
             <element signature="method#merge_sort#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#merge#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#bubbleSort#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#selectSort#0;class#LinkedListSummary#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -779,6 +783,7 @@
             <element signature="method#merge_sort#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#merge#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#bubbleSort#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#selectSort#0;class#LinkedListSummary#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -839,6 +844,7 @@
             <element signature="method#merge_sort#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#merge#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#bubbleSort#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#selectSort#0;class#LinkedListSummary#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -898,6 +904,7 @@
             <element signature="method#merge_sort#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#merge#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#bubbleSort#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#selectSort#0;class#LinkedListSummary#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1055,7 +1062,7 @@
     <entry file="file://$PROJECT_DIR$/src/LinkedListSummary.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="685">
-          <caret line="599" column="5" lean-forward="true" selection-start-line="599" selection-start-column="5" selection-end-line="599" selection-end-column="5" />
+          <caret line="601" column="43" lean-forward="false" selection-start-line="601" selection-start-column="43" selection-end-line="601" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#920#924#0" expanded="false" />
@@ -1085,6 +1092,7 @@
             <element signature="method#merge_sort#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#merge#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#bubbleSort#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#selectSort#0;class#LinkedListSummary#0" expanded="false" />
           </folding>
         </state>
       </provider>
