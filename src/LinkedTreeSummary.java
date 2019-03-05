@@ -287,7 +287,7 @@ public class LinkedTreeSummary {
         Queue<TreeNode> q = new LinkedList<>();
         q.offer(root);
         while (!q.isEmpty()) {
-
+            
         }
 
         return result;
