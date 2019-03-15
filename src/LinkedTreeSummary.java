@@ -41,7 +41,7 @@ public class LinkedTreeSummary {
          *  使用栈!
          */
         Stack<TreeNode> s = new Stack<>();
-        while (true) {
+        while (root!=null || ) {
             while (root != null) {  // 入栈
                 System.out.println(root.val);
                 s.push(root);
@@ -63,7 +63,7 @@ public class LinkedTreeSummary {
         }
         inOrder(root.left);
         System.out.println(root.val);
-        inOrder(root.left);
+        inOrder(root.right);
     }
     public void inOrderNonRecursive(TreeNode root) {
         /**
