@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/LinkedTreeSummary.java" line="211" />
+    <bookmark url="file://$PROJECT_DIR$/src/LinkedTreeSummary.java" line="231" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f026551-ef88-4ec9-a052-76fd74ef1373" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/LinkedTreeSummary.java" afterPath="$PROJECT_DIR$/src/LinkedTreeSummary.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -64,16 +63,18 @@
       <file leaf-file-name="LinkedTreeSummary.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LinkedTreeSummary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="43" column="29" lean-forward="false" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+            <state relative-caret-position="1535">
+              <caret line="311" column="0" lean-forward="true" selection-start-line="311" selection-start-column="0" selection-end-line="311" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#484#485#0" expanded="true" />
-                <element signature="e#522#523#0" expanded="true" />
+                <element signature="e#435#436#0" expanded="true" />
+                <element signature="e#473#474#0" expanded="true" />
                 <element signature="method#preOrder#0;class#LinkedTreeSummary#0" expanded="false" />
+                <element signature="method#preOrderNonRecursive#0;class#LinkedTreeSummary#0" expanded="false" />
                 <element signature="method#inOrder#0;class#LinkedTreeSummary#0" expanded="false" />
+                <element signature="method#inOrderNonRecursive#0;class#LinkedTreeSummary#0" expanded="false" />
                 <element signature="method#postOrder#0;class#LinkedTreeSummary#0" expanded="false" />
                 <element signature="method#postOrderNoRecursive#0;class#LinkedTreeSummary#0" expanded="false" />
+                <element signature="class#LinkedTreePostOrderNode#0;class#LinkedTreeSummary#0" expanded="false" />
                 <element signature="method#levelOrder#0;class#LinkedTreeSummary#0" expanded="false" />
                 <element signature="method#reConstructTree#0;class#LinkedTreeSummary#0" expanded="false" />
                 <element signature="method#reConstructTree_fun#0;class#LinkedTreeSummary#0" expanded="false" />
@@ -81,7 +82,7 @@
                 <element signature="method#verifyPostOrderBST#0;class#LinkedTreeSummary#0" expanded="false" />
                 <element signature="method#verifyPostOrderBST_fun#0;class#LinkedTreeSummary#0" expanded="false" />
                 <element signature="method#Print_Z#0;class#LinkedTreeSummary#0" expanded="false" />
-                <element signature="e#6722#6742#0" expanded="false" />
+                <element signature="e#7585#7605#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -165,10 +166,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1288" />
-    <option name="y" value="48" />
-    <option name="width" value="1296" />
-    <option name="height" value="1000" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -458,7 +459,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1288" y="48" width="1296" height="1000" extended-state="6" />
+    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -531,7 +532,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="43" />
+      <option name="time" value="44" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1067,16 +1068,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LinkedTreeSummary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="43" column="29" lean-forward="false" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+        <state relative-caret-position="1535">
+          <caret line="311" column="0" lean-forward="true" selection-start-line="311" selection-start-column="0" selection-end-line="311" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
-            <element signature="e#522#523#0" expanded="true" />
+            <element signature="e#435#436#0" expanded="true" />
+            <element signature="e#473#474#0" expanded="true" />
             <element signature="method#preOrder#0;class#LinkedTreeSummary#0" expanded="false" />
+            <element signature="method#preOrderNonRecursive#0;class#LinkedTreeSummary#0" expanded="false" />
             <element signature="method#inOrder#0;class#LinkedTreeSummary#0" expanded="false" />
+            <element signature="method#inOrderNonRecursive#0;class#LinkedTreeSummary#0" expanded="false" />
             <element signature="method#postOrder#0;class#LinkedTreeSummary#0" expanded="false" />
             <element signature="method#postOrderNoRecursive#0;class#LinkedTreeSummary#0" expanded="false" />
+            <element signature="class#LinkedTreePostOrderNode#0;class#LinkedTreeSummary#0" expanded="false" />
             <element signature="method#levelOrder#0;class#LinkedTreeSummary#0" expanded="false" />
             <element signature="method#reConstructTree#0;class#LinkedTreeSummary#0" expanded="false" />
             <element signature="method#reConstructTree_fun#0;class#LinkedTreeSummary#0" expanded="false" />
@@ -1084,7 +1087,7 @@
             <element signature="method#verifyPostOrderBST#0;class#LinkedTreeSummary#0" expanded="false" />
             <element signature="method#verifyPostOrderBST_fun#0;class#LinkedTreeSummary#0" expanded="false" />
             <element signature="method#Print_Z#0;class#LinkedTreeSummary#0" expanded="false" />
-            <element signature="e#6722#6742#0" expanded="false" />
+            <element signature="e#7585#7605#0" expanded="false" />
           </folding>
         </state>
       </provider>

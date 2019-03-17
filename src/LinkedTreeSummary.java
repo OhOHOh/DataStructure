@@ -1,5 +1,4 @@
 import java.util.*;
-import java.util.concurrent.LinkedBlockingQueue;
 
 /**
  * 关于java中二叉树的操作
@@ -39,9 +38,14 @@ public class LinkedTreeSummary {
         /**
          *  前序遍历 - 非递归
          *  使用栈!
+         *  对任意节点P:
+         *  1)访问节点P, 并将节点P入栈
+         *  2)判断节点P的左孩子是否为空: 若为空, 则取栈顶结点并进行出栈操作, 并将栈顶结点的右孩子置为当前的结点P，循环至1);
+         *  若不为空, 则将节点P的左孩子置为当前P;
+         *  3)直到P为NULL并且栈为空, 遍历结束
          */
         Stack<TreeNode> s = new Stack<>();
-        while (root!=null || ) {
+        while (root!=null || !s.isEmpty()) {
             while (root != null) {  // 入栈
                 System.out.println(root.val);
                 s.push(root);
@@ -68,17 +72,22 @@ public class LinkedTreeSummary {
     public void inOrderNonRecursive(TreeNode root) {
         /**
          *  中序遍历 - 非递归
-         *  使用栈!
+         *  使用栈! 对任意节点P而言:
+         *  1)若其左孩子不为空，则将P入栈并将P的左孩子置为当前的P，然后对当前结点P再进行相同的处理;
+         *  2)若其左孩子为空，则取栈顶元素并进行出栈操作，访问该栈顶结点，然后将当前的P置为栈顶结点的右孩子;
+         *  3)直到P为NULL并且栈为空则遍历结束
          */
         Stack<TreeNode> s = new Stack<>();
-        while (true) {
+        while (root!=null || !s.isEmpty()) {
             while (root != null) {
                 s.push(root);
                 root = root.left;
             }
-            root = s.pop();
-            System.out.println(root.val);
-            root = root.right;
+            if (!s.isEmpty()) {
+                root = s.pop();
+                System.out.println(root.val);
+                root = root.right;
+            }
         }
     }
     public void postOrder(TreeNode root) {
@@ -97,24 +106,35 @@ public class LinkedTreeSummary {
          *  后序遍历 - 非递归
          *  使用栈!
          */
-        Stack<TreeNode> s = new Stack<>();
-        if (root == null) {
+        Stack<LinkedTreePostOrderNode> stack = new Stack<>();
+        TreeNode p = root;
+        if (p == null) {
             return;
         }
-        s.push(root);
-        while (!s.isEmpty()) {
-            root = s.peek();
-            if (root.left == null && root.right == null) {
-                System.out.println(root.val);
-                s.pop();
-                continue;
+        while (!stack.isEmpty() || p!=null) {
+            while (p != null) {
+                stack.push(new LinkedTreePostOrderNode(p, true));
+                p = p.left;
             }
-            if (root.right != null) {
-                s.push(root.right);
+            while (!stack.isEmpty()) {
+                LinkedTreePostOrderNode LTPNOde= stack.pop();
+                if (!LTPNOde.is_First) {// 第二次了
+                    System.out.println(LTPNOde.node.val);
+                } else {
+                    LTPNOde.is_First = false;
+                    stack.push(LTPNOde);
+                    p = LTPNOde.node.right;
+                    break;
+                }
             }
-            if (root.left != null) {
-                s.push(root.left);
-            }
+        }
+    }
+    private class LinkedTreePostOrderNode {
+        TreeNode node;
+        boolean is_First;
+        public LinkedTreePostOrderNode(TreeNode node, boolean b) {
+            this.node = node;
+            this.is_First = b;
         }
     }
     public void levelOrder(TreeNode root) {
