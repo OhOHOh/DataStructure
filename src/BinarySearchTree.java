@@ -1,3 +1,5 @@
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+
 public class BinarySearchTree {
 
     public static class BSTNode {
@@ -62,7 +64,7 @@ public class BinarySearchTree {
         BSTNode root = new BSTNode(a[0]);
         for (int i = 1; i < a.length; i++) {
             insertBST(root, a[i]);
-            System.out.println(a[i]);
+//            System.out.println(a[i]);
         }
         return root;
     }
@@ -139,24 +141,24 @@ public class BinarySearchTree {
 //            return null;
 //        }
         BSTNode parent = root;
-        BSTNode current = root;
+        BSTNode deleteNode = root;
         boolean is_leftChild = false;
         //定位到删除点 current, 并且记录是左子树还是右子树
-        while (current.val != key) {
-            parent = current;
-            if (current.val > key) { //暂时左子树
+        while (deleteNode.val != key) {
+            parent = deleteNode;
+            if (deleteNode.val > key) { //暂时左子树
                 is_leftChild = true;
-                current = current.left;
-            } else {
+                deleteNode = deleteNode.left;
+            } else {//暂时右子树
                 is_leftChild = false;
-                current = current.right;
+                deleteNode = deleteNode.right;
             }
-            if (current == null) return root;
+            if (deleteNode == null) return root;  // 没有找到
         }// while
 
         // 如果删除节点的 左节点为空 , 右节点也为空
-        if (current.left==null && current.right==null) {
-            if (current == root) {
+        if (deleteNode.left==null && deleteNode.right==null) {
+            if (deleteNode == root) {
                 return null;
             }
             if (is_leftChild) {
@@ -168,36 +170,35 @@ public class BinarySearchTree {
         }
 
         // 如果删除节点只有一个子节点 右节点 或者 左节点
-        if (current.right == null) { //右节点为空
-            if (current == root) {//要删除节点是root的子节点
-                root = current.left;
-                root.left = null;
+        if (deleteNode.right == null) { //右节点为空
+            if (deleteNode == root) {//要删除节点是root的子节点
+                root = deleteNode.left;
                 return root;
             }
             if (is_leftChild) {
-                parent.left = current.left;
+                parent.left = deleteNode.left;
             } else {
-                parent.right = current.left;
+                parent.right = deleteNode.left;
             }
             return root;
         }
-        if (current.left == null) { //左节点为空
-            if (current == root) {//要删除节点是root的子节点
-                root = current.right;
-                root.right = null;
+        if (deleteNode.left == null) { //左节点为空
+            if (deleteNode == root) {//要删除节点是root的子节点
+                root = deleteNode.right;
                 return root;
             }
             if (is_leftChild) {
-                parent.left = current.right;
+                parent.left = deleteNode.right;
             } else {
-                parent.right  = current.right;
+                parent.right  = deleteNode.right;
             }
             return root;
         }
 
         // 如果删除节点的 左右子节点都不为空
-        BSTNode successor = getDeleteSuccessor(current);
-        if (current == root) {
+        BSTNode successor = getDeleteSuccessor(deleteNode);
+        System.out.println(successor.val);
+        if (deleteNode == root) {
             root.val = successor.val;
             return root;
         }
@@ -206,7 +207,8 @@ public class BinarySearchTree {
         } else {
             parent.right = successor;
         }
-        successor.left = current.left;
+        successor.left = deleteNode.left;
+        successor.right = deleteNode.right;
         return root;
     }// deleteBST
 
@@ -217,22 +219,25 @@ public class BinarySearchTree {
      * @return
      */
     private BSTNode getDeleteSuccessor(BSTNode deleteNode) {
-        BSTNode successorParent = deleteNode;
-        BSTNode successor = deleteNode.right;
+        BSTNode rtnParent = deleteNode;
+        BSTNode rtn = deleteNode.right; //指向 deleteNode 的右子树中最小的节点
 
-        BSTNode current = successor.left;
-        while (current != null) {
-            successorParent = successor;
-            successor = current;
-            current = current.left;
+        while (rtn.left != null) {
+            rtnParent = rtn;
+            rtn = rtn.left;
         }
 
-        if (successor.right != null) {
-            successorParent.left = successor.right;
+        if (rtnParent == deleteNode) {
+            rtnParent.right = rtn.right;
+            return rtn;
+        }
+
+        if (rtn.right != null) {
+            rtnParent.left = rtn.right;
         } else {
-            successorParent.left = null;
+            rtnParent.left = null;
         }
 
-        return successor;
+        return rtn;
     }
 }
