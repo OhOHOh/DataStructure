@@ -237,7 +237,6 @@ public class BinarySearchTree {
         } else {
             rtnParent.left = null;
         }
-
         return rtn;
     }
 }
