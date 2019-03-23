@@ -1,6 +1,4 @@
-import sun.jvm.hotspot.utilities.ReversePtrs;
-
-public class arrayListSelf {
+public class AlgorithmSelf {
     public static void main(String args[]) {
 //        int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         int[] a = {2,4,-7,5,2,-1,2,-4,3};
@@ -20,6 +18,16 @@ public class arrayListSelf {
         for (int i = 0; i < a3.length; i++) {
             System.out.print(a3[i] + " ");
         }
+        System.out.println();
+        System.out.println("===============");
+        char[] s1 = {'A', 'A', 'B', 'C', 'D'};
+        char[] s2 = {'C', 'D', 'A', 'A'};
+        System.out.println(s1RightShiftS2(s1, s2));
+        System.out.println("===============");
+        String sa = "travelling";
+        String sb = "traveling";
+        System.out.println(calculateStrDistance_Rec(sa.toCharArray(), 0, sa.length()-1, sb.toCharArray(), 0, sb.length()-1));
+        System.out.println(calculateStrDistance(sa.toCharArray(), sb.toCharArray()));
 
     }
 
@@ -119,6 +127,65 @@ public class arrayListSelf {
             e--;
         }
     }
+    /**
+     * s1循环右移中的某种情况下能够包含 s2
+     */
+    public static boolean s1RightShiftS2(char[] s1, char[] s2) {
+        int s1Len = s1.length;
+        int s2Len = s2.length;
+        int k = 0;
+        for (int i = 0; i < s1Len*2; i++) {
+            if (s1[i % s1Len] == s2[k]) {
+                k++;
+            }
+            if (k == s2Len) {
+                break;
+            }
+        }
 
+        return k==s2Len;
+    }
+    /**
+     * 求2个字符串之间的编辑距离
+     * 1. 递归 - 见《编程之美》3.3
+     * 2. DP, edit[i][j] 代表了 s1中长度为i的子串 到 s2中长度为j的子串 的编辑距离
+     */
+    public static int calculateStrDistance_Rec(char[] s1, int s1S, int s1E, char[] s2, int s2S, int s2E) {
+        if (s1S > s1E) {
+            if (s2S > s2E) return 0;
+            else return s2E-s2S+1;
+        }
+        if (s2S > s2E) {
+            if (s1S > s1E) return 0;
+            else return s1S-s1E+1;
+        }
+        if (s1[s1S] == s2[s2S]) {
+            return calculateStrDistance_Rec(s1, s1S+1, s1E, s2, s2S+1, s2E);
+        } else {
+            int t1 = calculateStrDistance_Rec(s1, s1S+1, s1E, s2, s2S, s2E);
+            int t2 = calculateStrDistance_Rec(s1, s1S, s1E, s2, s2S+1, s2E);
+            int t3 = calculateStrDistance_Rec(s1, s1S+1, s1E, s2, s2S+1, s2E);
+            return Math.min(Math.min(t1, t2), t3) + 1;
+        }
+    }
+    public static int calculateStrDistance(char[] s1, char[] s2) {
+        int[][] edit = new int[s1.length+1][s2.length+1];
+        for (int i = 0; i < s2.length+1; i++) {
+            edit[0][i] = i;
+        }
+        for (int i = 0; i < s1.length+1; i++) {
+            edit[i][0] = i;
+        }
+        for (int i = 1; i < s1.length+1; i++) {
+            for (int j = 1; j < s2.length+1; j++) {
+                if (s1[i-1] == s2[j-1]) {
+                    edit[i][j] = edit[i-1][j-1];
+                } else {
+                    edit[i][j] = 1 + Math.min(Math.min(edit[i-1][j], edit[i][j-1]), edit[i-1][j-1]);
+                }
+            }
+        }
+        return edit[s1.length][s2.length];
+    }
 
 }
