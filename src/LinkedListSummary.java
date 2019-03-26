@@ -1,5 +1,5 @@
 import java.util.HashMap;
-import java.util.Scanner;
+import java.util.HashSet;
 import java.util.Stack;
 
 /**
@@ -12,7 +12,7 @@ import java.util.Stack;
  * 6. 已知两个单链表pHead1 和pHead2 各自有序，把它们合并成一个链表依然有序: mergeSortedList, mergeSortedListRec
  * 7. 对单链表进行排序,listSort（归并）,insertionSortList（插入）
  * 8. 判断一个单链表中是否有环: hasCycle
- * 9. 判断两个单链表是否相交: isIntersect
+ * 9. 判断两个单链表是否相交: isIntersect_CheckLastNode
  * 10. 已知一个单链表中存在环，求进入环中的第一个节点: getFirstNodeInCycle, getFirstNodeInCycleHashMap
  * 11. 给出一单链表头指针head和一节点指针delete，O(1)时间复杂度删除节点delete: deleteNode
  */
@@ -43,8 +43,14 @@ public class LinkedListSummary {
         int[] arr = {2,10,4,9,6,4,1};
         quickSort(arr);
         for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i]);
+            System.out.print(arr[i] + " ");
         }
+        System.out.println();
+        System.out.println("==========================");
+        int[] sort_a = {1, 3, 5, 6, 8};
+        System.out.println(binarySearch_Rec(sort_a, 8, 0, sort_a.length-1));
+        System.out.println(binarySearch(sort_a, 0));
+
 //        if (in.hasNext()) {
 //            head = new Node(Integer.valueOf(in.next()));
 //        }
@@ -95,6 +101,9 @@ public class LinkedListSummary {
         //display(insertionSortList(head));
     } // end main
 
+    /**
+     * 打印链表
+     */
     private static void display(Node head) {
         if (head == null) {
             return;
@@ -106,10 +115,11 @@ public class LinkedListSummary {
         }
         System.out.println();
     }
+
+    /**
+     * 获取链表长度, 有环咋办?
+     */
     public static int getListLength(Node head) {
-        /**
-         *  求单链表中结点的个数: getListLength
-         */
         int len = 0;
         while (head != null) {
             len++;
@@ -117,11 +127,11 @@ public class LinkedListSummary {
         }
         return len;
     }
+    /**
+     *  将单链表反转, 用 3 个指针, 先进行初始化
+     *  单链表逆序
+     */
     public static Node reverseList_1(Node head) {
-        /**
-         *  将单链表反转, 用 3 个指针, 先进行初始化
-         *  单链表逆序
-         */
         if (head == null || head.next == null) {
             return head;
         }
@@ -138,12 +148,12 @@ public class LinkedListSummary {
         }
         return p;
     }
+    /**
+     *  将单链表反转
+     *  对于一条链表，从第2个节点到第N个节点，依次逐节点插入到第1个节点(head节点)之后，(N-1)次这样的操作结束之后将第1个节点挪到新表的表尾即可
+     *  https://blog.csdn.net/feliciafay/article/details/6841115
+     */
     public static Node reverseList_2(Node head) {
-        /**
-         *  将单链表反转
-         *  对于一条链表，从第2个节点到第N个节点，依次逐节点插入到第1个节点(head节点)之后，(N-1)次这样的操作结束之后将第1个节点挪到新表的表尾即可
-         *  https://blog.csdn.net/feliciafay/article/details/6841115
-         */
         if (head == null || head.next == null) {
             return head;
         }
@@ -163,10 +173,10 @@ public class LinkedListSummary {
 
         return head;
     }
+    /**
+     *  递归来求解单链表逆序
+     */
     private static Node reverseList_3(Node head) {
-        /**
-         *  递归来求解
-         */
         if (head == null || head.next == null) {
             return head;
         }
@@ -175,10 +185,10 @@ public class LinkedListSummary {
         head.next = null;
         return reHead;
     }
+    /**
+     *  获取倒数第 k 个节点
+     */
     private static Node reGetKthNode(Node head, int k) {
-        /**
-         *  获取倒数第 k 个节点
-         */
         if (head == null) {
             return null;
         }
@@ -198,10 +208,10 @@ public class LinkedListSummary {
         }
         return p;
     }
+    /**
+     *  获取单链表的中间节点, 设置 2 个指针, target 每次跳 1 步, temp 每次跳 2 步, 当 temp 满足条件的时候, target 就指向了中间节点
+     */
     private static Node getMiddleNode(Node head) {
-        /**
-         *  获取单链表的中间节点, 设置 2 个指针, target 每次跳 1 步, temp 每次跳 2 步, 当 temp 满足条件的时候, target 就指向了中间节点
-         */
         if (head == null || head.next == null) {
             return head;
         }
@@ -213,10 +223,10 @@ public class LinkedListSummary {
         }
         return target;
     }
+    /**
+     *  从尾到头打印单链表, 用递归的方式
+     */
     private static void reversePrintListRec(Node head) {
-        /**
-         *  从尾到头打印单链表, 用递归的方式
-         */
         if (head == null) {
             return;
         } else {
@@ -224,10 +234,10 @@ public class LinkedListSummary {
             System.out.println(head.value);
         }
     }
+    /**
+     *  从尾到头打印单链表, 用 栈 的方式
+     */
     private static void reversePrintListStack(Node head) {
-        /**
-         *  从尾到头打印单链表, 用 栈 的方式
-         */
         Stack<Integer> s = new Stack<>();
         Node p = head;
         while (p != null) {
@@ -238,10 +248,10 @@ public class LinkedListSummary {
             System.out.println(s.pop());
         }
     }
+    /**
+     *  合并两个有序的单链表head1和head2
+     */
     private static Node mergeSortedList(Node head1, Node head2) {
-        /**
-         *  合并两个有序的单链表head1和head2
-         */
         if (head1 == null) {
             return head2;
         } else if (head2 == null) {
@@ -275,10 +285,10 @@ public class LinkedListSummary {
         }
         return mergeHead;
     }
+    /**
+     *  合并两个有序的单链表head1和head2, 递归
+     */
     private static Node mergeSortedListRec(Node head1, Node head2) {
-        /**
-         *  合并两个有序的单链表head1和head2, 递归
-         */
         if (head1 == null) {
             return head2;
         }
@@ -293,11 +303,11 @@ public class LinkedListSummary {
             return head1;
         }
     }
+    /**
+     * 对单链表进行排序  , 归并排序
+     * 转化为 合并两个有序链表, 不建议递归  !!!
+     */
     private static Node listSort(Node head) {
-        /**
-         * 对单链表进行排序  , 归并排序
-         * 转化为 合并两个有序链表, 不建议递归  !!!
-         */
         Node nex = null;
         if (head == null || head.next == null) {
             return head;
@@ -312,12 +322,12 @@ public class LinkedListSummary {
 
         return mergeSortedList(listSort(head), listSort(nex));
     }
+    /**
+     * 插入排序
+     * unsorted 指向未排序的部分
+     * head 指向拍好序的部分, 最后返回 head !!!
+     */
     private static Node insertionSortList(Node head) {
-        /**
-         * 插入排序
-         * unsorted 指向未排序的部分
-         * head 指向拍好序的部分, 最后返回 head !!!
-         */
         if (head == null || head.next == null) {
             return head;
         }
@@ -374,10 +384,10 @@ public class LinkedListSummary {
 
         return head;
     }
+    /**
+     *  快排的思想
+     */
     private static void quickSort(Node begin, Node end) {
-        /**
-         *  快排的思想
-         */
         if (begin == null || end == null || begin == end) {
             return;
         }
@@ -397,40 +407,29 @@ public class LinkedListSummary {
         quickSort(begin, p);
         quickSort(p.next, end);
     }
-    private static Node isIntersect(Node head1, Node head2) {
-        /**
-         *  判断两个单链表是否相交,如果相交返回第一个节点，否则返回null
-         *  如果单纯的判断是否相交，只需要看最后一个指针是否相等
-         */
-        Node target = null;
-        if (head1 == null || head2 == null) {
-            return target;
+    private static Node deleteNode(Node head, Node delete) {
+        if (delete == null) {
+            return null;
         }
-        int len1 = getListLength(head1);
-        int len2 = getListLength(head2);
-        if (len1 >= len2) {
-            for (int i = 0; i < len1-len2; i++) {
-                head1 = head1.next;
+        if (delete.next == null) {
+            if (head.next == null) {
+                head = null;
+            } else {
+                Node temp = head;
+                while (temp.next != delete) {
+                    temp = temp.next;
+                }
+                temp.next = null;
             }
         } else {
-            for (int i = 0; i < len2-len1; i++) {
-                head2 = head2.next;
-            }
+            delete.value = delete.next.value;
+            delete.next = delete.next.next;
         }
 
-        while (head1 != null && head2 != null) {
-            if (head1 == head2) {
-                target = head1;
-                break;
-            } else {
-                head1 = head1.next;
-                head2 = head2.next;
-            }
-        }
-
-        return target;
+        return head;
     }
 
+    //========================判断链表是否有环========================
     private static boolean hasCycle(Node head) {
         /**
          *  判断一个单链表中是否有环,快慢指针
@@ -490,27 +489,96 @@ public class LinkedListSummary {
 
         return slow;
     }
-    private static Node deleteNode(Node head, Node delete) {
-        if (delete == null) {
-            return null;
+
+    //========================判断2个链表是否相交========================
+    /**
+     * 单纯的判断是否相交，只需要看最后一个指针是否相等
+     */
+    public static boolean isIntersect_CheckLastNode(Node head1, Node head2) {
+        Node head1End = head1;
+        Node head2End = head2;
+        while (head1End.next != null) {
+            head1End = head1End.next;
         }
-        if (delete.next == null) {
-            if (head.next == null) {
-                head = null;
-            } else {
-                Node temp = head;
-                while (temp.next != delete) {
-                    temp = temp.next;
-                }
-                temp.next = null;
-            }
-        } else {
-            delete.value = delete.next.value;
-            delete.next = delete.next.next;
+        while (head2End.next != null) {
+            head2End = head2End.next;
         }
 
-        return head;
+        return (head1End==head2End);
     }
+    /**
+     *  判断两个单链表是否相交, 如果相交返回第一个节点，否则返回null
+     */
+    private static Node isIntersect_ReturnFirstNode(Node head1, Node head2) {
+        Node target = null;
+        if (head1 == null || head2 == null) {
+            return target;
+        }
+        int len1 = getListLength(head1);
+        int len2 = getListLength(head2);
+        if (len1 >= len2) {
+            for (int i = 0; i < len1-len2; i++) {
+                head1 = head1.next;
+            }
+        } else {
+            for (int i = 0; i < len2-len1; i++) {
+                head2 = head2.next;
+            }
+        }
+
+        while (head1 != null && head2 != null) {
+            if (head1 == head2) {
+                target = head1;
+                break;
+            } else {
+                head1 = head1.next;
+                head2 = head2.next;
+            }
+        }
+        return target;
+    }
+
+    /**
+     * 如果链表有环, 怎么办? 分情况讨论:(现在不知道链表有没有环、不知道2个链表是不是相交了)
+     * 1. 如果两个链表都没有环，那么同原算法;
+     * 2. 如果两个链表一个有环，一个没环，那么必然不相交;
+     * 3. 如果两个链表都有环，判断一个链表环上的任一点是否在另一个链表上，如果是，则必相交，反之不相交;
+     */
+    public static boolean isIntersect_hasCycle(Node head1, Node head2) {
+        if (hasCycle(head1)&&!hasCycle(head2) || !hasCycle(head1)&&hasCycle(head2)) {
+            return false;
+        }
+        if (!hasCycle(head1) && !hasCycle(head2)) {
+            return isIntersect_ReturnFirstNode(head1, head2)==null;
+        }
+        // 接下来就是2个链表都存在环了!相交部分肯定在环中!
+        // 先把head1的环中所有节点都放入Set中
+        Node head1Cycle_FirstNode = getFirstNodeInCycle(head1);
+        HashSet<Node> hashSet = new HashSet<>();
+        while (true) {
+            if (hashSet.contains(head1Cycle_FirstNode)) {
+                break;
+            }
+            hashSet.add(head1Cycle_FirstNode);
+            head1Cycle_FirstNode = head1Cycle_FirstNode.next;
+        }
+        // 对head2中的环进行进行遍历
+        boolean find = false;
+        Node head2Cycle_FirstNode = getFirstNodeInCycle(head2);
+        Node end = head2Cycle_FirstNode;
+        while (true) {
+            if (hashSet.contains(head2Cycle_FirstNode)) {
+                find = true;
+                break;
+            }
+            head2Cycle_FirstNode = head2Cycle_FirstNode.next;
+            if (head2Cycle_FirstNode == end) {
+                break;
+            }
+        }
+        return find;
+    }
+
 
 
     //========================Java 数组实现快排========================
@@ -614,5 +682,39 @@ public class LinkedListSummary {
             a[i] = temp;
         }
     }
-
+    //========================Java 数组实现二分查找========================
+    public static int binarySearch_Rec(int[] a, int target, int s, int e) {
+        /**
+         * 在有序数组中寻找 target, 若找到,返回对应index; 若没有找到,则返回-1
+         */
+        if (s > e) {
+            return -1;
+        }
+        int mid = (s - e) / 2 + e;
+        if (a[mid] == target) {
+            return mid;
+        }
+        if (target > a[mid]) {
+            return binarySearch_Rec(a, target, mid + 1, e);
+        } else {
+            return binarySearch_Rec(a, target, s, mid - 1);
+        }
+    }
+    public static int binarySearch(int[] a, int target) {
+        int len = a.length;
+        int low = 0, high = len-1;
+        int mid = 0; //单纯初始化
+        while (low <= high) {  // <= !!!
+            mid = low + (high - low) / 2;
+            if (a[mid] == target) {
+                return mid;
+            }
+            if (target > a[mid]) {
+                low = mid + 1;
+            } else {
+                high = mid - 1;
+            }
+        }
+        return -1;
+    }
 }
