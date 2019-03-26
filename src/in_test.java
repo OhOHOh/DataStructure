@@ -28,4 +28,24 @@ public class in_test {
 //            System.out.print(array1[i] + " ");
 //        }
     }
+
+    static class People implements Comparable<People> {
+        int id, d, c, sum;
+        public People(int id, int d, int c) {
+            this.id = id;
+            this.d = d;
+            this.c = c;
+            this.sum = sum;
+        }
+        @Override
+        public int compareTo(People o) {
+            if (this.sum != o.sum) {
+                return o.sum-this.sum;
+            }
+            if (this.d != o.d) {
+                return o.d-this.d;
+            }
+            return this.id-o.id;
+        }
+    }//class
 }
