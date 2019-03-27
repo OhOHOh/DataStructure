@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f026551-ef88-4ec9-a052-76fd74ef1373" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/LinkedListSummary.java" afterPath="$PROJECT_DIR$/src/LinkedListSummary.java" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearchTree.java" afterPath="$PROJECT_DIR$/src/BinarySearchTree.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,17 +60,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BinarySearchTree.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BinarySearchTree.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BinarySearchTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="820">
-              <caret line="142" column="30" lean-forward="false" selection-start-line="142" selection-start-column="30" selection-end-line="142" selection-end-column="30" />
+            <state relative-caret-position="1010">
+              <caret line="232" column="17" lean-forward="true" selection-start-line="232" selection-start-column="17" selection-end-line="232" selection-end-column="17" />
               <folding>
+                <element signature="method#BSTNode#0;class#BSTNode#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="method#constructBST#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="method#constructBST_byInsert#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="method#inOrder#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="method#searchBST#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="method#insertBST#0;class#BinarySearchTree#0" expanded="false" />
-                <element signature="e#3620#3672#0" expanded="false" />
+                <element signature="method#insertBST_2#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="method#deleteBST#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="e#4226#4278#0" expanded="false" />
+                <element signature="method#getDeleteSuccessor#0;class#BinarySearchTree#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -98,11 +103,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LinkedListSummary.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LinkedListSummary.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LinkedListSummary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="683" column="5" lean-forward="true" selection-start-line="683" selection-start-column="5" selection-end-line="683" selection-end-column="5" />
+            <state relative-caret-position="2775">
+              <caret line="623" column="5" lean-forward="true" selection-start-line="623" selection-start-column="5" selection-end-line="623" selection-end-column="5" />
               <folding>
                 <element signature="e#934#938#0" expanded="false" />
                 <element signature="e#1721#1750#0" expanded="false" />
@@ -133,6 +138,7 @@
                 <element signature="method#bubbleSort#0;class#LinkedListSummary#0" expanded="false" />
                 <element signature="method#selectSort#0;class#LinkedListSummary#0" expanded="false" />
                 <element signature="method#binarySearch_Rec#0;class#LinkedListSummary#0" expanded="false" />
+                <element signature="method#binarySearch#0;class#LinkedListSummary#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -142,7 +148,7 @@
         <entry file="file://$PROJECT_DIR$/test/BinarySearchTreeTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="625">
-              <caret line="25" column="31" lean-forward="false" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+              <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -227,11 +233,11 @@
         <option value="$PROJECT_DIR$/src/LinkedTree.java" />
         <option value="$PROJECT_DIR$/src/LinkedTreeSummary.java" />
         <option value="$PROJECT_DIR$/test/BinarySearchTreeTest.java" />
-        <option value="$PROJECT_DIR$/src/BinarySearchTree.java" />
         <option value="$PROJECT_DIR$/src/arrayListSelf.java" />
         <option value="$PROJECT_DIR$/src/AlgorithmSelf.java" />
         <option value="$PROJECT_DIR$/src/in_test.java" />
         <option value="$PROJECT_DIR$/src/LinkedListSummary.java" />
+        <option value="$PROJECT_DIR$/src/BinarySearchTree.java" />
       </list>
     </option>
   </component>
@@ -242,10 +248,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="38" />
-    <option name="y" value="191" />
-    <option name="width" value="1872" />
-    <option name="height" value="1040" />
+    <option name="x" value="54" />
+    <option name="y" value="-8" />
+    <option name="width" value="1874" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -564,7 +570,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924336" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2357217" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24593717" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1026,28 +1032,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BinarySearchTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="820">
-          <caret line="142" column="30" lean-forward="false" selection-start-line="142" selection-start-column="30" selection-end-line="142" selection-end-column="30" />
-          <folding>
-            <element signature="method#constructBST#0;class#BinarySearchTree#0" expanded="false" />
-            <element signature="method#constructBST_byInsert#0;class#BinarySearchTree#0" expanded="false" />
-            <element signature="method#inOrder#0;class#BinarySearchTree#0" expanded="false" />
-            <element signature="method#insertBST#0;class#BinarySearchTree#0" expanded="false" />
-            <element signature="e#3620#3672#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/BinarySearchTreeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="25" column="31" lean-forward="false" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AlgorithmSelf.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="775">
@@ -1070,8 +1054,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LinkedListSummary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="683" column="5" lean-forward="true" selection-start-line="683" selection-start-column="5" selection-end-line="683" selection-end-column="5" />
+        <state relative-caret-position="2775">
+          <caret line="623" column="5" lean-forward="true" selection-start-line="623" selection-start-column="5" selection-end-line="623" selection-end-column="5" />
           <folding>
             <element signature="e#934#938#0" expanded="false" />
             <element signature="e#1721#1750#0" expanded="false" />
@@ -1102,6 +1086,34 @@
             <element signature="method#bubbleSort#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#selectSort#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#binarySearch_Rec#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#binarySearch#0;class#LinkedListSummary#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/BinarySearchTreeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinarySearchTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1010">
+          <caret line="232" column="17" lean-forward="true" selection-start-line="232" selection-start-column="17" selection-end-line="232" selection-end-column="17" />
+          <folding>
+            <element signature="method#BSTNode#0;class#BSTNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="method#constructBST#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="method#constructBST_byInsert#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="method#inOrder#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="method#searchBST#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="method#insertBST#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="method#insertBST_2#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="method#deleteBST#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="e#4226#4278#0" expanded="false" />
+            <element signature="method#getDeleteSuccessor#0;class#BinarySearchTree#0" expanded="false" />
           </folding>
         </state>
       </provider>

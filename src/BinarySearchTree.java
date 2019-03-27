@@ -129,6 +129,27 @@ public class BinarySearchTree {
         }// while
         return root;
     }
+    public void insertBST_2(BSTNode root, int key) {
+        BSTNode p = root, p_Parent=root;
+        boolean is_left = false;
+        while (p != null) {
+            if (key == p.val) break;
+            if (key > p.val) {
+                p_Parent = p;
+                p = p.right;
+                is_left = false;
+            } else {
+                p_Parent = p;
+                p = p.left;
+                is_left = true;
+            }
+        }//while
+        if (is_left) {
+            p_Parent.left = new BSTNode(key);
+        } else {
+            p_Parent.right = new BSTNode(key);
+        }
+    }
 
     /**
      * 删除一个指定的数字 key, 若树中没有 key, 那么就不变
@@ -144,7 +165,7 @@ public class BinarySearchTree {
         BSTNode deleteNode = root;
         boolean is_leftChild = false;
         //定位到删除点 current, 并且记录是左子树还是右子树
-        while (deleteNode.val != key) {
+        while (deleteNode.val != key && deleteNode != null) {
             parent = deleteNode;
             if (deleteNode.val > key) { //暂时左子树
                 is_leftChild = true;
@@ -158,7 +179,7 @@ public class BinarySearchTree {
 
         // 如果删除节点的 左节点为空 , 右节点也为空
         if (deleteNode.left==null && deleteNode.right==null) {
-            if (deleteNode == root) {
+            if (deleteNode == root) {//要删除节点是root的子节点======
                 return null;
             }
             if (is_leftChild) {
@@ -168,10 +189,9 @@ public class BinarySearchTree {
             }
             return root;
         }
-
         // 如果删除节点只有一个子节点 右节点 或者 左节点
         if (deleteNode.right == null) { //右节点为空
-            if (deleteNode == root) {//要删除节点是root的子节点
+            if (deleteNode == root) {//要删除节点是root的子节点======
                 root = deleteNode.left;
                 return root;
             }
@@ -183,7 +203,7 @@ public class BinarySearchTree {
             return root;
         }
         if (deleteNode.left == null) { //左节点为空
-            if (deleteNode == root) {//要删除节点是root的子节点
+            if (deleteNode == root) {//要删除节点是root的子节点======
                 root = deleteNode.right;
                 return root;
             }
