@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f026551-ef88-4ec9-a052-76fd74ef1373" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/BinarySearchTree.java" afterPath="$PROJECT_DIR$/src/BinarySearchTree.java" />
+      <change beforePath="$PROJECT_DIR$/src/AlgorithmSelf.java" afterPath="$PROJECT_DIR$/src/AlgorithmSelf.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BinarySearchTree.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BinarySearchTree.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BinarySearchTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1010">
-              <caret line="232" column="17" lean-forward="true" selection-start-line="232" selection-start-column="17" selection-end-line="232" selection-end-column="17" />
+            <state relative-caret-position="375">
+              <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
               <folding>
                 <element signature="method#BSTNode#0;class#BSTNode#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="method#constructBST#0;class#BinarySearchTree#0" expanded="false" />
@@ -81,15 +81,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AlgorithmSelf.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AlgorithmSelf.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AlgorithmSelf.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="775">
-              <caret line="148" column="20" lean-forward="true" selection-start-line="148" selection-start-column="20" selection-end-line="148" selection-end-column="20" />
+            <state relative-caret-position="500">
+              <caret line="113" column="7" lean-forward="false" selection-start-line="113" selection-start-column="7" selection-end-line="113" selection-end-column="19" />
               <folding>
-                <element signature="method#main#0;class#AlgorithmSelf#0" expanded="false" />
                 <element signature="method#MaxSubSum_1#0;class#AlgorithmSelf#0" expanded="false" />
                 <element signature="method#MaxSubSum_2#0;class#AlgorithmSelf#0" expanded="false" />
+                <element signature="method#MaxSubSum_3#0;class#AlgorithmSelf#0" expanded="false" />
                 <element signature="method#MaxSubSum2D#0;class#AlgorithmSelf#0" expanded="false" />
                 <element signature="method#BC#0;class#AlgorithmSelf#0" expanded="false" />
                 <element signature="method#MaxListLen#0;class#AlgorithmSelf#0" expanded="false" />
@@ -234,10 +234,10 @@
         <option value="$PROJECT_DIR$/src/LinkedTreeSummary.java" />
         <option value="$PROJECT_DIR$/test/BinarySearchTreeTest.java" />
         <option value="$PROJECT_DIR$/src/arrayListSelf.java" />
-        <option value="$PROJECT_DIR$/src/AlgorithmSelf.java" />
         <option value="$PROJECT_DIR$/src/in_test.java" />
         <option value="$PROJECT_DIR$/src/LinkedListSummary.java" />
         <option value="$PROJECT_DIR$/src/BinarySearchTree.java" />
+        <option value="$PROJECT_DIR$/src/AlgorithmSelf.java" />
       </list>
     </option>
   </component>
@@ -336,7 +336,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LinkedListSummary">
+  <component name="RunManager" selected="Application.AlgorithmSelf">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -512,8 +512,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.LinkedListSummary" />
-        <item index="1" class="java.lang.String" itemvalue="Application.AlgorithmSelf" />
+        <item index="0" class="java.lang.String" itemvalue="Application.AlgorithmSelf" />
+        <item index="1" class="java.lang.String" itemvalue="Application.LinkedListSummary" />
         <item index="2" class="java.lang.String" itemvalue="Application.BinarySearchTreeTest" />
         <item index="3" class="java.lang.String" itemvalue="Application.BinarySearchTree" />
         <item index="4" class="java.lang.String" itemvalue="Application.in_test" />
@@ -570,7 +570,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924336" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24593717" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24506749" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -601,7 +601,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="51" />
+      <option name="time" value="53" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1032,26 +1032,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AlgorithmSelf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="775">
-          <caret line="148" column="20" lean-forward="true" selection-start-line="148" selection-start-column="20" selection-end-line="148" selection-end-column="20" />
-          <folding>
-            <element signature="method#main#0;class#AlgorithmSelf#0" expanded="false" />
-            <element signature="method#MaxSubSum_1#0;class#AlgorithmSelf#0" expanded="false" />
-            <element signature="method#MaxSubSum_2#0;class#AlgorithmSelf#0" expanded="false" />
-            <element signature="method#MaxSubSum2D#0;class#AlgorithmSelf#0" expanded="false" />
-            <element signature="method#BC#0;class#AlgorithmSelf#0" expanded="false" />
-            <element signature="method#MaxListLen#0;class#AlgorithmSelf#0" expanded="false" />
-            <element signature="method#RightShift#0;class#AlgorithmSelf#0" expanded="false" />
-            <element signature="method#Reverse#0;class#AlgorithmSelf#0" expanded="false" />
-            <element signature="method#s1RightShiftS2#0;class#AlgorithmSelf#0" expanded="false" />
-            <element signature="method#calculateStrDistance_Rec#0;class#AlgorithmSelf#0" expanded="false" />
-            <element signature="method#calculateStrDistance#0;class#AlgorithmSelf#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LinkedListSummary.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2775">
@@ -1101,8 +1081,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BinarySearchTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1010">
-          <caret line="232" column="17" lean-forward="true" selection-start-line="232" selection-start-column="17" selection-end-line="232" selection-end-column="17" />
+        <state relative-caret-position="375">
+          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
           <folding>
             <element signature="method#BSTNode#0;class#BSTNode#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="method#constructBST#0;class#BinarySearchTree#0" expanded="false" />
@@ -1114,6 +1094,26 @@
             <element signature="method#deleteBST#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="e#4226#4278#0" expanded="false" />
             <element signature="method#getDeleteSuccessor#0;class#BinarySearchTree#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AlgorithmSelf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="113" column="7" lean-forward="false" selection-start-line="113" selection-start-column="7" selection-end-line="113" selection-end-column="19" />
+          <folding>
+            <element signature="method#MaxSubSum_1#0;class#AlgorithmSelf#0" expanded="false" />
+            <element signature="method#MaxSubSum_2#0;class#AlgorithmSelf#0" expanded="false" />
+            <element signature="method#MaxSubSum_3#0;class#AlgorithmSelf#0" expanded="false" />
+            <element signature="method#MaxSubSum2D#0;class#AlgorithmSelf#0" expanded="false" />
+            <element signature="method#BC#0;class#AlgorithmSelf#0" expanded="false" />
+            <element signature="method#MaxListLen#0;class#AlgorithmSelf#0" expanded="false" />
+            <element signature="method#RightShift#0;class#AlgorithmSelf#0" expanded="false" />
+            <element signature="method#Reverse#0;class#AlgorithmSelf#0" expanded="false" />
+            <element signature="method#s1RightShiftS2#0;class#AlgorithmSelf#0" expanded="false" />
+            <element signature="method#calculateStrDistance_Rec#0;class#AlgorithmSelf#0" expanded="false" />
+            <element signature="method#calculateStrDistance#0;class#AlgorithmSelf#0" expanded="false" />
           </folding>
         </state>
       </provider>

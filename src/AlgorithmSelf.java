@@ -2,7 +2,7 @@ public class AlgorithmSelf {
     public static void main(String args[]) {
 //        int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         int[] a = {2,4,-7,5,2,-1,2,-4,3};
-        int[] a1 = {-2, -3, -1};
+        int[] a1 = {-10, -1, -3, -2};
         int[][] a2D = {
                 {-1, -10, 2},
                 {-2, -3, 2},
@@ -10,7 +10,8 @@ public class AlgorithmSelf {
         };
         int[] a3 = {1,2,4,5,6};
         System.out.println(MaxSubSum_1(a1));
-        System.out.println(MaxSubSum_2(a1));
+        System.out.println(MaxSubSum_2(a));
+        System.out.println(MaxSubSum_3(a1));
         System.out.println("===============");
         System.out.println(MaxSubSum2D(a2D));
         System.out.println("===============");
@@ -35,7 +36,7 @@ public class AlgorithmSelf {
     /**
      * 数组中最大子数组和
      * -1 暴力解决, O(n^2)
-     * -2 利用最大和的特性, 但是当数组全部为负数的时候, 需要添加一些新代码
+     * -2 利用最大和的特性, 但是当数组全部为负数的时候, 需要添加一些新代码 O(n)
      */
     public static int MaxSubSum_1(int[] a) {
         int maxSum = Integer.MIN_VALUE;
@@ -49,21 +50,31 @@ public class AlgorithmSelf {
         return maxSum;
     }
     public static int MaxSubSum_2(int[] a) {
-        int thisSum = 0;
+        int currentSum = 0;
         int maxNeg = Integer.MIN_VALUE;
         int maxSum = Integer.MIN_VALUE;
         for (int i = 0; i < a.length; i++) {
             if (a[i] < 0) {
                 maxNeg = Math.max(maxNeg, a[i]);
             }
-            thisSum += a[i];
-            if (thisSum < 0) {
-                thisSum = 0;
-            } else if (thisSum > maxSum) {
-                maxSum = thisSum;
+            currentSum += a[i];
+            if (currentSum < 0) {
+                currentSum = 0;
+            } else if (currentSum > maxSum) {
+                maxSum = currentSum;
             }
         }
         return Math.max(maxSum, maxNeg);
+    }
+    public static int MaxSubSum_3(int[] a) {
+        int maxSum = Integer.MIN_VALUE;
+        int[] dp = new int[a.length];
+        dp[0] = a[0];
+        for (int i = 1; i < a.length; i++) {
+            dp[i] = (dp[i-1] > 0) ? dp[i-1]+a[i] : a[i];
+            maxSum = Math.max(maxSum, dp[i]);
+        }
+        return maxSum;
     }
     /**
      * 数组中最大子数组和(二维)
@@ -104,8 +115,22 @@ public class AlgorithmSelf {
      */
     public static int MaxListLen(int[] a) {
         int maxLen = 0;
-
-
+        int[] dp = new int[a.length]; //以a[i]为结尾的最长递增子序列的长度
+        dp[0] = 1;
+        for (int i = 1; i < a.length; i++) {
+            int index = -1;
+            int maxDp = Integer.MIN_VALUE;
+            for (int j = 0; j < i; j++) {
+                if (a[i] > a[j]) {
+                    if (dp[j] > maxDp) {
+                        maxDp = dp[j];
+                        index = j;
+                    }
+                }
+            }
+            dp[i] = (index==-1) ? 1 : dp[index]+1;
+            maxLen = Math.max(maxLen, dp[i]);
+        }
         return maxLen;
     }
     /**
