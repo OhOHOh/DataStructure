@@ -117,13 +117,13 @@ public class LinkedTreeSummary {
                 p = p.left;
             }
             while (!stack.isEmpty()) {
-                LinkedTreePostOrderNode LTPNOde= stack.pop();
-                if (!LTPNOde.is_First) {// 第二次了
-                    System.out.println(LTPNOde.node.val);
+                LinkedTreePostOrderNode LTPNode= stack.pop();
+                if (!LTPNode.is_First) {// 第二次了
+                    System.out.println(LTPNode.node.val);
                 } else {
-                    LTPNOde.is_First = false;
-                    stack.push(LTPNOde);
-                    p = LTPNOde.node.right;
+                    LTPNode.is_First = false;
+                    stack.push(LTPNode);
+                    p = LTPNode.node.right;
                     break;
                 }
             }
@@ -223,7 +223,7 @@ public class LinkedTreeSummary {
 
     public boolean verifyPostOrderBST(int[] a) {
         /**
-         * 判断数组是否是一颗二叉查找树的后续遍历
+         * 判断数组是否是一颗二叉查找树的后序遍历
          */
         if (a == null || a.length <= 0) {
             return false;

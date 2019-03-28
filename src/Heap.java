@@ -104,7 +104,6 @@ public class Heap {
     }
 
     // ============================================ 最大堆的实现 ============================================
-
     private static void siftdown_max(int i, int[] h) {
         /**
          *  最小堆 , 向下调整, 用于维护 堆, 保持堆的特性
@@ -179,7 +178,6 @@ public class Heap {
 
     // ============================================ 堆排序 ============================================
     //private static int n;
-
     private static int delete_top(int[] h) { // 改变 heap_length
         /**
          * @input:
@@ -210,7 +208,6 @@ public class Heap {
         /**
          * 堆排序, 从小到大, 使用 最大堆
          */
-        int temp = heap_length;
         while (heap_length > 1) {
             int i = h[heap_length-1];
             h[heap_length-1] = h[0];
@@ -220,5 +217,4 @@ public class Heap {
             siftdown_max(0, h);
         }
     }
-
 }

@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f026551-ef88-4ec9-a052-76fd74ef1373" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/AlgorithmSelf.java" afterPath="$PROJECT_DIR$/src/AlgorithmSelf.java" />
+      <change beforePath="$PROJECT_DIR$/src/Heap.java" afterPath="$PROJECT_DIR$/src/Heap.java" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedListSummary.java" afterPath="$PROJECT_DIR$/src/LinkedListSummary.java" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedTreeSummary.java" afterPath="$PROJECT_DIR$/src/LinkedTreeSummary.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,24 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MyArrayList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MyArrayList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-              <folding>
-                <element signature="e#285#286#0" expanded="true" />
-                <element signature="e#310#311#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="LinkedTree.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LinkedTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1675">
-              <caret line="258" column="103" lean-forward="false" selection-start-line="258" selection-start-column="103" selection-end-line="258" selection-end-column="103" />
+            <state relative-caret-position="510">
+              <caret line="185" column="32" lean-forward="false" selection-start-line="185" selection-start-column="32" selection-end-line="185" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#addLeft#0;class#TreeNode#0;class#LinkedTree#0" expanded="false" />
@@ -55,6 +44,31 @@
                 <element signature="method#getLeafNumRec#0;class#LinkedTree#0" expanded="false" />
                 <element signature="method#reConstructTree#0;class#LinkedTree#0" expanded="false" />
                 <element signature="method#cat#0;class#LinkedTree#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LinkedTreeSummary.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LinkedTreeSummary.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1085">
+              <caret line="121" column="57" lean-forward="true" selection-start-line="121" selection-start-column="57" selection-end-line="121" selection-end-column="57" />
+              <folding>
+                <element signature="method#preOrder#0;class#LinkedTreeSummary#0" expanded="false" />
+                <element signature="method#preOrderNonRecursive#0;class#LinkedTreeSummary#0" expanded="false" />
+                <element signature="method#inOrder#0;class#LinkedTreeSummary#0" expanded="false" />
+                <element signature="method#inOrderNonRecursive#0;class#LinkedTreeSummary#0" expanded="false" />
+                <element signature="method#postOrder#0;class#LinkedTreeSummary#0" expanded="false" />
+                <element signature="method#levelOrder#0;class#LinkedTreeSummary#0" expanded="false" />
+                <element signature="method#reConstructTree#0;class#LinkedTreeSummary#0" expanded="false" />
+                <element signature="method#reConstructTree_fun#0;class#LinkedTreeSummary#0" expanded="false" />
+                <element signature="method#constructBinSearchTree#0;class#LinkedTreeSummary#0" expanded="false" />
+                <element signature="method#verifyPostOrderBST#0;class#LinkedTreeSummary#0" expanded="false" />
+                <element signature="method#verifyPostOrderBST_fun#0;class#LinkedTreeSummary#0" expanded="false" />
+                <element signature="method#Print_Z#0;class#LinkedTreeSummary#0" expanded="false" />
+                <element signature="e#7585#7605#0" expanded="false" />
+                <element signature="method#Print#0;class#LinkedTreeSummary#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -81,11 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AlgorithmSelf.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AlgorithmSelf.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AlgorithmSelf.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="113" column="7" lean-forward="false" selection-start-line="113" selection-start-column="7" selection-end-line="113" selection-end-column="19" />
+            <state relative-caret-position="50">
+              <caret line="134" column="5" lean-forward="true" selection-start-line="134" selection-start-column="5" selection-end-line="134" selection-end-column="5" />
               <folding>
                 <element signature="method#MaxSubSum_1#0;class#AlgorithmSelf#0" expanded="false" />
                 <element signature="method#MaxSubSum_2#0;class#AlgorithmSelf#0" expanded="false" />
@@ -96,8 +110,6 @@
                 <element signature="method#RightShift#0;class#AlgorithmSelf#0" expanded="false" />
                 <element signature="method#Reverse#0;class#AlgorithmSelf#0" expanded="false" />
                 <element signature="method#s1RightShiftS2#0;class#AlgorithmSelf#0" expanded="false" />
-                <element signature="method#calculateStrDistance_Rec#0;class#AlgorithmSelf#0" expanded="false" />
-                <element signature="method#calculateStrDistance#0;class#AlgorithmSelf#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -106,15 +118,15 @@
       <file leaf-file-name="LinkedListSummary.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LinkedListSummary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2775">
-              <caret line="623" column="5" lean-forward="true" selection-start-line="623" selection-start-column="5" selection-end-line="623" selection-end-column="5" />
+            <state relative-caret-position="-140">
+              <caret line="544" column="53" lean-forward="true" selection-start-line="544" selection-start-column="53" selection-end-line="544" selection-end-column="53" />
               <folding>
                 <element signature="e#934#938#0" expanded="false" />
                 <element signature="e#1721#1750#0" expanded="false" />
                 <element signature="method#display#0;class#LinkedListSummary#0" expanded="false" />
                 <element signature="method#getListLength#0;class#LinkedListSummary#0" expanded="false" />
+                <element signature="method#reverseList_1#0;class#LinkedListSummary#0" expanded="false" />
                 <element signature="method#reverseList_2#0;class#LinkedListSummary#0" expanded="false" />
-                <element signature="method#reverseList_3#0;class#LinkedListSummary#0" expanded="false" />
                 <element signature="method#reGetKthNode#0;class#LinkedListSummary#0" expanded="false" />
                 <element signature="method#getMiddleNode#0;class#LinkedListSummary#0" expanded="false" />
                 <element signature="method#reversePrintListRec#0;class#LinkedListSummary#0" expanded="false" />
@@ -123,7 +135,7 @@
                 <element signature="method#mergeSortedListRec#0;class#LinkedListSummary#0" expanded="false" />
                 <element signature="method#listSort#0;class#LinkedListSummary#0" expanded="false" />
                 <element signature="method#insertionSortList#0;class#LinkedListSummary#0" expanded="false" />
-                <element signature="e#8927#8959#0" expanded="false" />
+                <element signature="e#8955#8987#0" expanded="false" />
                 <element signature="method#quickSort#0;class#LinkedListSummary#0" expanded="false" />
                 <element signature="method#deleteNode#0;class#LinkedListSummary#0" expanded="false" />
                 <element signature="method#hasCycle#0;class#LinkedListSummary#0" expanded="false" />
@@ -132,8 +144,8 @@
                 <element signature="method#isIntersect_CheckLastNode#0;class#LinkedListSummary#0" expanded="false" />
                 <element signature="method#isIntersect_ReturnFirstNode#0;class#LinkedListSummary#0" expanded="false" />
                 <element signature="method#isIntersect_hasCycle#0;class#LinkedListSummary#0" expanded="false" />
+                <element signature="method#qsort#0;class#LinkedListSummary#0" expanded="false" />
                 <element signature="method#partition#0;class#LinkedListSummary#0" expanded="false" />
-                <element signature="method#merge_sort#0;class#LinkedListSummary#0" expanded="false" />
                 <element signature="method#merge#0;class#LinkedListSummary#0" expanded="false" />
                 <element signature="method#bubbleSort#0;class#LinkedListSummary#0" expanded="false" />
                 <element signature="method#selectSort#0;class#LinkedListSummary#0" expanded="false" />
@@ -179,9 +191,19 @@
       <file leaf-file-name="Heap.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Heap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4875">
-              <caret line="195" column="46" lean-forward="false" selection-start-line="195" selection-start-column="46" selection-end-line="195" selection-end-column="46" />
-              <folding />
+            <state relative-caret-position="660">
+              <caret line="216" column="31" lean-forward="true" selection-start-line="216" selection-start-column="31" selection-end-line="216" selection-end-column="31" />
+              <folding>
+                <element signature="method#siftdown#0;class#Heap#0" expanded="false" />
+                <element signature="method#siftup#0;class#Heap#0" expanded="false" />
+                <element signature="method#buildHeap_siftdown#0;class#Heap#0" expanded="false" />
+                <element signature="method#buildHeap_siftup#0;class#Heap#0" expanded="false" />
+                <element signature="method#siftdown_max#0;class#Heap#0" expanded="false" />
+                <element signature="method#siftup_max#0;class#Heap#0" expanded="false" />
+                <element signature="method#buildHeap_siftdown_max#0;class#Heap#0" expanded="false" />
+                <element signature="method#buildHeap_siftup_max#0;class#Heap#0" expanded="false" />
+                <element signature="method#delete_top#0;class#Heap#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -229,15 +251,15 @@
         <option value="$PROJECT_DIR$/src/pingDuoDuo/No2.java" />
         <option value="$PROJECT_DIR$/src/pingDuoDuo/No10.java" />
         <option value="$PROJECT_DIR$/src/Tree.java" />
-        <option value="$PROJECT_DIR$/src/Heap.java" />
         <option value="$PROJECT_DIR$/src/LinkedTree.java" />
-        <option value="$PROJECT_DIR$/src/LinkedTreeSummary.java" />
         <option value="$PROJECT_DIR$/test/BinarySearchTreeTest.java" />
         <option value="$PROJECT_DIR$/src/arrayListSelf.java" />
         <option value="$PROJECT_DIR$/src/in_test.java" />
-        <option value="$PROJECT_DIR$/src/LinkedListSummary.java" />
         <option value="$PROJECT_DIR$/src/BinarySearchTree.java" />
         <option value="$PROJECT_DIR$/src/AlgorithmSelf.java" />
+        <option value="$PROJECT_DIR$/src/Heap.java" />
+        <option value="$PROJECT_DIR$/src/LinkedListSummary.java" />
+        <option value="$PROJECT_DIR$/src/LinkedTreeSummary.java" />
       </list>
     </option>
   </component>
@@ -570,7 +592,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924336" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24506749" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24506749" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -601,7 +623,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="53" />
+      <option name="time" value="54" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -649,9 +671,8 @@
             <element signature="method#reversePrintListStack#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#mergeSortedList#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#mergeSortedListRec#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#listSort#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#insertionSortList#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="e#8927#8959#0" expanded="false" />
+            <element signature="e#8955#8987#0" expanded="false" />
             <element signature="method#quickSort#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#deleteNode#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#hasCycle#0;class#LinkedListSummary#0" expanded="false" />
@@ -705,9 +726,8 @@
             <element signature="method#reversePrintListStack#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#mergeSortedList#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#mergeSortedListRec#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#listSort#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#insertionSortList#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="e#8927#8959#0" expanded="false" />
+            <element signature="e#8955#8987#0" expanded="false" />
             <element signature="method#quickSort#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#deleteNode#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#hasCycle#0;class#LinkedListSummary#0" expanded="false" />
@@ -769,9 +789,8 @@
             <element signature="method#reversePrintListStack#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#mergeSortedList#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#mergeSortedListRec#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#listSort#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#insertionSortList#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="e#8927#8959#0" expanded="false" />
+            <element signature="e#8955#8987#0" expanded="false" />
             <element signature="method#quickSort#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#deleteNode#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#hasCycle#0;class#LinkedListSummary#0" expanded="false" />
@@ -824,9 +843,8 @@
             <element signature="method#reversePrintListStack#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#mergeSortedList#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#mergeSortedListRec#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#listSort#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#insertionSortList#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="e#8927#8959#0" expanded="false" />
+            <element signature="e#8955#8987#0" expanded="false" />
             <element signature="method#quickSort#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#deleteNode#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#hasCycle#0;class#LinkedListSummary#0" expanded="false" />
@@ -878,9 +896,8 @@
             <element signature="method#reversePrintListStack#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#mergeSortedList#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#mergeSortedListRec#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#listSort#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#insertionSortList#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="e#8927#8959#0" expanded="false" />
+            <element signature="e#8955#8987#0" expanded="false" />
             <element signature="method#quickSort#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#deleteNode#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#hasCycle#0;class#LinkedListSummary#0" expanded="false" />
@@ -939,86 +956,11 @@
     <entry file="file://$PROJECT_DIR$/src/pingDuoDuo/No3.java" />
     <entry file="file://$PROJECT_DIR$/src/test.java" />
     <entry file="file://$PROJECT_DIR$/src/test_360_1.java" />
-    <entry file="file://$PROJECT_DIR$/src/Generic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/shortestPath.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Heap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4875">
-          <caret line="195" column="46" lean-forward="false" selection-start-line="195" selection-start-column="46" selection-end-line="195" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="e#285#286#0" expanded="true" />
-            <element signature="e#310#311#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LinkedTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1675">
-          <caret line="258" column="103" lean-forward="false" selection-start-line="258" selection-start-column="103" selection-end-line="258" selection-end-column="103" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#addLeft#0;class#TreeNode#0;class#LinkedTree#0" expanded="false" />
-            <element signature="method#addRight#0;class#TreeNode#0;class#LinkedTree#0" expanded="false" />
-            <element signature="method#preOrderTravelRec#0;class#LinkedTree#0" expanded="false" />
-            <element signature="method#midOrderTravelRec#0;class#LinkedTree#0" expanded="false" />
-            <element signature="method#backOrderTravelRec#0;class#LinkedTree#0" expanded="false" />
-            <element signature="method#levelTravel#0;class#LinkedTree#0" expanded="false" />
-            <element signature="method#preOrderTravel#0;class#LinkedTree#0" expanded="false" />
-            <element signature="method#midOrderTravel#0;class#LinkedTree#0" expanded="false" />
-            <element signature="e#4723#4788#0" expanded="false" />
-            <element signature="method#getTreeDepthRec#0;class#LinkedTree#0" expanded="false" />
-            <element signature="method#getTreeNumRec#0;class#LinkedTree#0" expanded="false" />
-            <element signature="method#getNumForKthLevelRec#0;class#LinkedTree#0" expanded="false" />
-            <element signature="method#getLeafNumRec#0;class#LinkedTree#0" expanded="false" />
-            <element signature="method#reConstructTree#0;class#LinkedTree#0" expanded="false" />
-            <element signature="method#cat#0;class#LinkedTree#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LinkedTreeSummary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="70" column="5" lean-forward="false" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
-          <folding>
-            <element signature="method#preOrder#0;class#LinkedTreeSummary#0" expanded="false" />
-            <element signature="method#preOrderNonRecursive#0;class#LinkedTreeSummary#0" expanded="false" />
-            <element signature="method#inOrder#0;class#LinkedTreeSummary#0" expanded="false" />
-            <element signature="method#inOrderNonRecursive#0;class#LinkedTreeSummary#0" expanded="false" />
-            <element signature="method#postOrder#0;class#LinkedTreeSummary#0" expanded="false" />
-            <element signature="method#postOrderNoRecursive#0;class#LinkedTreeSummary#0" expanded="false" />
-            <element signature="class#LinkedTreePostOrderNode#0;class#LinkedTreeSummary#0" expanded="false" />
-            <element signature="method#levelOrder#0;class#LinkedTreeSummary#0" expanded="false" />
-            <element signature="method#reConstructTree#0;class#LinkedTreeSummary#0" expanded="false" />
-            <element signature="method#reConstructTree_fun#0;class#LinkedTreeSummary#0" expanded="false" />
-            <element signature="method#constructBinSearchTree#0;class#LinkedTreeSummary#0" expanded="false" />
-            <element signature="method#verifyPostOrderBST#0;class#LinkedTreeSummary#0" expanded="false" />
-            <element signature="method#verifyPostOrderBST_fun#0;class#LinkedTreeSummary#0" expanded="false" />
-            <element signature="method#Print_Z#0;class#LinkedTreeSummary#0" expanded="false" />
-            <element signature="e#7585#7605#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1028,45 +970,6 @@
           <caret line="49" column="12" lean-forward="false" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
           <folding>
             <element signature="e#564#595#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LinkedListSummary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2775">
-          <caret line="623" column="5" lean-forward="true" selection-start-line="623" selection-start-column="5" selection-end-line="623" selection-end-column="5" />
-          <folding>
-            <element signature="e#934#938#0" expanded="false" />
-            <element signature="e#1721#1750#0" expanded="false" />
-            <element signature="method#display#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#getListLength#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#reverseList_2#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#reverseList_3#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#reGetKthNode#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#getMiddleNode#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#reversePrintListRec#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#reversePrintListStack#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#mergeSortedList#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#mergeSortedListRec#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#listSort#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#insertionSortList#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="e#8927#8959#0" expanded="false" />
-            <element signature="method#quickSort#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#deleteNode#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#hasCycle#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#getFirstNodeInCycleHashMap#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#getFirstNodeInCycle#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#isIntersect_CheckLastNode#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#isIntersect_ReturnFirstNode#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#isIntersect_hasCycle#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#partition#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#merge_sort#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#merge#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#bubbleSort#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#selectSort#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#binarySearch_Rec#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#binarySearch#0;class#LinkedListSummary#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1098,10 +1001,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Generic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AlgorithmSelf.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="113" column="7" lean-forward="false" selection-start-line="113" selection-start-column="7" selection-end-line="113" selection-end-column="19" />
+        <state relative-caret-position="50">
+          <caret line="134" column="5" lean-forward="true" selection-start-line="134" selection-start-column="5" selection-end-line="134" selection-end-column="5" />
           <folding>
             <element signature="method#MaxSubSum_1#0;class#AlgorithmSelf#0" expanded="false" />
             <element signature="method#MaxSubSum_2#0;class#AlgorithmSelf#0" expanded="false" />
@@ -1112,8 +1023,122 @@
             <element signature="method#RightShift#0;class#AlgorithmSelf#0" expanded="false" />
             <element signature="method#Reverse#0;class#AlgorithmSelf#0" expanded="false" />
             <element signature="method#s1RightShiftS2#0;class#AlgorithmSelf#0" expanded="false" />
-            <element signature="method#calculateStrDistance_Rec#0;class#AlgorithmSelf#0" expanded="false" />
-            <element signature="method#calculateStrDistance#0;class#AlgorithmSelf#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Heap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="216" column="31" lean-forward="true" selection-start-line="216" selection-start-column="31" selection-end-line="216" selection-end-column="31" />
+          <folding>
+            <element signature="method#siftdown#0;class#Heap#0" expanded="false" />
+            <element signature="method#siftup#0;class#Heap#0" expanded="false" />
+            <element signature="method#buildHeap_siftdown#0;class#Heap#0" expanded="false" />
+            <element signature="method#buildHeap_siftup#0;class#Heap#0" expanded="false" />
+            <element signature="method#siftdown_max#0;class#Heap#0" expanded="false" />
+            <element signature="method#siftup_max#0;class#Heap#0" expanded="false" />
+            <element signature="method#buildHeap_siftdown_max#0;class#Heap#0" expanded="false" />
+            <element signature="method#buildHeap_siftup_max#0;class#Heap#0" expanded="false" />
+            <element signature="method#delete_top#0;class#Heap#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LinkedListSummary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-140">
+          <caret line="544" column="53" lean-forward="true" selection-start-line="544" selection-start-column="53" selection-end-line="544" selection-end-column="53" />
+          <folding>
+            <element signature="e#934#938#0" expanded="false" />
+            <element signature="e#1721#1750#0" expanded="false" />
+            <element signature="method#display#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#getListLength#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#reverseList_1#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#reverseList_2#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#reGetKthNode#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#getMiddleNode#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#reversePrintListRec#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#reversePrintListStack#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#mergeSortedList#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#mergeSortedListRec#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#listSort#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#insertionSortList#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="e#8955#8987#0" expanded="false" />
+            <element signature="method#quickSort#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#deleteNode#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#hasCycle#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#getFirstNodeInCycleHashMap#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#getFirstNodeInCycle#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#isIntersect_CheckLastNode#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#isIntersect_ReturnFirstNode#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#isIntersect_hasCycle#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#qsort#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#partition#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#merge#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#bubbleSort#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#selectSort#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#binarySearch_Rec#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#binarySearch#0;class#LinkedListSummary#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#310#311#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LinkedTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="185" column="32" lean-forward="false" selection-start-line="185" selection-start-column="32" selection-end-line="185" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#addLeft#0;class#TreeNode#0;class#LinkedTree#0" expanded="false" />
+            <element signature="method#addRight#0;class#TreeNode#0;class#LinkedTree#0" expanded="false" />
+            <element signature="method#preOrderTravelRec#0;class#LinkedTree#0" expanded="false" />
+            <element signature="method#midOrderTravelRec#0;class#LinkedTree#0" expanded="false" />
+            <element signature="method#backOrderTravelRec#0;class#LinkedTree#0" expanded="false" />
+            <element signature="method#levelTravel#0;class#LinkedTree#0" expanded="false" />
+            <element signature="method#preOrderTravel#0;class#LinkedTree#0" expanded="false" />
+            <element signature="method#midOrderTravel#0;class#LinkedTree#0" expanded="false" />
+            <element signature="e#4723#4788#0" expanded="false" />
+            <element signature="method#getTreeDepthRec#0;class#LinkedTree#0" expanded="false" />
+            <element signature="method#getTreeNumRec#0;class#LinkedTree#0" expanded="false" />
+            <element signature="method#getNumForKthLevelRec#0;class#LinkedTree#0" expanded="false" />
+            <element signature="method#getLeafNumRec#0;class#LinkedTree#0" expanded="false" />
+            <element signature="method#reConstructTree#0;class#LinkedTree#0" expanded="false" />
+            <element signature="method#cat#0;class#LinkedTree#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LinkedTreeSummary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1085">
+          <caret line="121" column="57" lean-forward="true" selection-start-line="121" selection-start-column="57" selection-end-line="121" selection-end-column="57" />
+          <folding>
+            <element signature="method#preOrder#0;class#LinkedTreeSummary#0" expanded="false" />
+            <element signature="method#preOrderNonRecursive#0;class#LinkedTreeSummary#0" expanded="false" />
+            <element signature="method#inOrder#0;class#LinkedTreeSummary#0" expanded="false" />
+            <element signature="method#inOrderNonRecursive#0;class#LinkedTreeSummary#0" expanded="false" />
+            <element signature="method#postOrder#0;class#LinkedTreeSummary#0" expanded="false" />
+            <element signature="method#levelOrder#0;class#LinkedTreeSummary#0" expanded="false" />
+            <element signature="method#reConstructTree#0;class#LinkedTreeSummary#0" expanded="false" />
+            <element signature="method#reConstructTree_fun#0;class#LinkedTreeSummary#0" expanded="false" />
+            <element signature="method#constructBinSearchTree#0;class#LinkedTreeSummary#0" expanded="false" />
+            <element signature="method#verifyPostOrderBST#0;class#LinkedTreeSummary#0" expanded="false" />
+            <element signature="method#verifyPostOrderBST_fun#0;class#LinkedTreeSummary#0" expanded="false" />
+            <element signature="method#Print_Z#0;class#LinkedTreeSummary#0" expanded="false" />
+            <element signature="e#7585#7605#0" expanded="false" />
+            <element signature="method#Print#0;class#LinkedTreeSummary#0" expanded="false" />
           </folding>
         </state>
       </provider>

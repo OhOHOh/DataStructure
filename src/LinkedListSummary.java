@@ -309,9 +309,9 @@ public class LinkedListSummary {
      */
     private static Node listSort(Node head) {
         Node nex = null;
-        if (head == null || head.next == null) {
+        if (head == null || head.next == null) { // 就一个节点或者直接为null
             return head;
-        } else if (head.next.next == null) {
+        } else if (head.next.next == null) { // 仅有2个节点
             nex = head.next;
             head.next = null;
         } else {
@@ -388,24 +388,27 @@ public class LinkedListSummary {
      *  快排的思想
      */
     private static void quickSort(Node begin, Node end) {
-        if (begin == null || end == null || begin == end) {
+        if (begin == null || begin == end) {
             return;
         }
-        Node p = begin;
-        Node q = p.next;
+        Node p = begin.next;
+        Node small = begin;
 
-        int nMidValue = p.value;
-        while (q != null && q != end.next) {
-            if (q.value < nMidValue) {
-                p = p.next;
+        int pivot = begin.value;
+        while (p != end) {
+            if (p.value < pivot) {
+                small = small.next;
                 int temp = p.value;
-                p.value = q.value;
-                q.value = temp;
+                p.value = small.value;
+                small.value = temp;
             }
-            q = q.next;
+            p = p.next;
         }
-        quickSort(begin, p);
-        quickSort(p.next, end);
+        begin.value = small.value;
+        small.value = pivot;
+
+        quickSort(begin, small);
+        quickSort(small.next, end);
     }
     private static Node deleteNode(Node head, Node delete) {
         if (delete == null) {
