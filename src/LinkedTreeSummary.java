@@ -7,6 +7,7 @@ import java.util.*;
  * 3. 根据前序遍历+中序遍历来构建二叉树
  * 4. 如何构建一颗二叉查找树(二叉搜索树)(二叉排序树)、判断数组是否是一颗二叉查找树的后续遍历
  * 5. 如何实现一个函数按照之字形打印二叉树，即第一行按照从左到右的顺序打印，第二层按照从右至左的顺序打印，第三行按照从左到右的顺序打印，其他行以此类推。
+ * 6. 打印二叉树所有最左边的元素、最右边的元素
  */
 
 public class LinkedTreeSummary {
@@ -311,5 +312,78 @@ public class LinkedTreeSummary {
         }
 
         return result;
+    }
+
+    public static void levelReadLeft(TreeNode root) {
+        /**
+         * 打印二叉树所有最左边的元素, 利用的是层次遍历的思想
+         */
+        int depth = calDepth(root);
+        Queue<TreeNode> q = new LinkedList<>();
+        q.offer(root);
+        int curCount=1, nextCount=0;
+        boolean time_to_print = true;
+        while (!q.isEmpty()) {
+            TreeNode tmp = q.poll();
+            curCount--;
+            if (time_to_print) {
+                System.out.println(tmp.val);
+                time_to_print = false;
+            }
+            if (tmp.left != null) {
+                q.offer(tmp.left);
+                nextCount++;
+            }
+            if (tmp.right != null) {
+                q.offer(tmp.right);
+                nextCount++;
+            }
+            if (curCount == 0) {
+                curCount = nextCount;
+                nextCount = 0;
+                time_to_print = true;
+            }
+        }
+    }
+    private static int calDepth(TreeNode root) {
+        /**
+         * 计算树的深度
+         */
+        if (root == null) {
+            return 0;
+        }
+        int leftD = calDepth(root.left);
+        int rightD = calDepth(root.right);
+        return Math.max(leftD, rightD)+1;
+    }
+    public static int[] calLevelNodes(TreeNode root) {
+        /**
+         * 计算二叉树每层有几个节点
+         */
+        int depth = calDepth(root);
+        int[] rtn = new int[depth];
+        rtn[0] = 1;
+        int curCount=1, nextCount=0, index=1;
+        Queue<TreeNode> q = new LinkedList<>();
+        q.offer(root);
+        while (!q.isEmpty()) {
+            TreeNode tmp = q.poll();
+            curCount--;
+            if (tmp.left != null) {
+                q.offer(tmp.left);
+                nextCount++;
+            }
+            if (tmp.right != null) {
+                q.offer(tmp.right);
+                nextCount++;
+            }
+            if (curCount == 0) { //当前层所有节点都出队列了
+                rtn[index++] = nextCount;
+                curCount = nextCount;
+                nextCount = 0;
+            }
+        }
+
+        return rtn;
     }
 }
