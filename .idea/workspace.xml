@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4f026551-ef88-4ec9-a052-76fd74ef1373" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/LinkedTreeSummary.java" afterPath="$PROJECT_DIR$/src/LinkedTreeSummary.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,7 +23,7 @@
       <file leaf-file-name="LinkedTree.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LinkedTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
+            <state relative-caret-position="1550">
               <caret line="210" column="0" lean-forward="false" selection-start-line="210" selection-start-column="0" selection-end-line="210" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -48,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LinkedTreeSummary.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LinkedTreeSummary.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LinkedTreeSummary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="620">
-              <caret line="316" column="52" lean-forward="false" selection-start-line="316" selection-start-column="52" selection-end-line="316" selection-end-column="52" />
+            <state relative-caret-position="900">
+              <caret line="145" column="22" lean-forward="false" selection-start-line="145" selection-start-column="22" selection-end-line="145" selection-end-column="22" />
               <folding>
                 <element signature="method#preOrder#0;class#LinkedTreeSummary#0" expanded="false" />
                 <element signature="method#preOrderNonRecursive#0;class#LinkedTreeSummary#0" expanded="false" />
@@ -81,7 +80,7 @@
       <file leaf-file-name="BinarySearchTree.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BinarySearchTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
+            <state relative-caret-position="375">
               <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
               <folding>
                 <element signature="method#BSTNode#0;class#BSTNode#0;class#BinarySearchTree#0" expanded="false" />
@@ -114,16 +113,18 @@
                 <element signature="method#RightShift#0;class#AlgorithmSelf#0" expanded="false" />
                 <element signature="method#Reverse#0;class#AlgorithmSelf#0" expanded="false" />
                 <element signature="method#s1RightShiftS2#0;class#AlgorithmSelf#0" expanded="false" />
+                <element signature="method#calculateStrDistance_Rec#0;class#AlgorithmSelf#0" expanded="false" />
+                <element signature="method#calculateStrDistance#0;class#AlgorithmSelf#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LinkedListSummary.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LinkedListSummary.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LinkedListSummary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3235">
-              <caret line="544" column="53" lean-forward="false" selection-start-line="544" selection-start-column="53" selection-end-line="544" selection-end-column="53" />
+            <state relative-caret-position="25">
+              <caret line="497" column="31" lean-forward="false" selection-start-line="497" selection-start-column="31" selection-end-line="497" selection-end-column="31" />
               <folding>
                 <element signature="e#934#938#0" expanded="false" />
                 <element signature="e#1721#1750#0" expanded="false" />
@@ -185,8 +186,8 @@
       <file leaf-file-name="Heap.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Heap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1725">
-              <caret line="216" column="31" lean-forward="false" selection-start-line="216" selection-start-column="31" selection-end-line="216" selection-end-column="31" />
+            <state relative-caret-position="1325">
+              <caret line="200" column="38" lean-forward="false" selection-start-line="200" selection-start-column="38" selection-end-line="200" selection-end-column="38" />
               <folding>
                 <element signature="method#siftdown#0;class#Heap#0" expanded="false" />
                 <element signature="method#siftup#0;class#Heap#0" expanded="false" />
@@ -263,11 +264,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="581" />
+    <option name="y" value="78" />
+    <option name="width" value="1100" />
+    <option name="height" value="969" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -328,8 +329,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="Scratches" />
     </panes>
@@ -575,8 +576,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="581" y="78" width="1100" height="969" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -585,19 +585,19 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924336" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24506749" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24506749" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15991472" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17115384" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3083434" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3083434" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -639,10 +639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1764">
           <caret line="99" column="47" lean-forward="false" selection-start-line="99" selection-start-column="47" selection-end-line="99" selection-end-column="47" />
-          <folding>
-            <element signature="e#285#286#0" expanded="false" />
-            <element signature="e#310#311#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -699,10 +695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1764">
           <caret line="99" column="47" lean-forward="false" selection-start-line="99" selection-start-column="47" selection-end-line="99" selection-end-column="47" />
-          <folding>
-            <element signature="e#285#286#0" expanded="false" />
-            <element signature="e#310#311#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -765,10 +757,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1764">
           <caret line="99" column="47" lean-forward="false" selection-start-line="99" selection-start-column="47" selection-end-line="99" selection-end-column="47" />
-          <folding>
-            <element signature="e#285#286#0" expanded="false" />
-            <element signature="e#310#311#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -826,10 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1764">
           <caret line="99" column="47" lean-forward="false" selection-start-line="99" selection-start-column="47" selection-end-line="99" selection-end-column="47" />
-          <folding>
-            <element signature="e#285#286#0" expanded="false" />
-            <element signature="e#310#311#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -884,10 +868,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2079">
           <caret line="99" column="47" lean-forward="false" selection-start-line="99" selection-start-column="47" selection-end-line="99" selection-end-column="47" />
-          <folding>
-            <element signature="e#285#286#0" expanded="false" />
-            <element signature="e#310#311#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -943,10 +923,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2079">
           <caret line="99" column="47" lean-forward="false" selection-start-line="99" selection-start-column="47" selection-end-line="99" selection-end-column="47" />
-          <folding>
-            <element signature="e#285#286#0" expanded="false" />
-            <element signature="e#310#311#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -962,10 +938,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1659">
           <caret line="79" column="26" lean-forward="false" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="26" />
-          <folding>
-            <element signature="e#285#286#0" expanded="false" />
-            <element signature="e#310#311#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -975,21 +947,96 @@
     <entry file="file://$PROJECT_DIR$/src/pingDuoDuo/No3.java" />
     <entry file="file://$PROJECT_DIR$/src/test.java" />
     <entry file="file://$PROJECT_DIR$/src/test_360_1.java" />
-    <entry file="file://$PROJECT_DIR$/src/in_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="49" column="12" lean-forward="false" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
-          <folding>
-            <element signature="e#564#595#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Generic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/BinarySearchTreeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LinkedTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1550">
+          <caret line="210" column="0" lean-forward="false" selection-start-line="210" selection-start-column="0" selection-end-line="210" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#addLeft#0;class#TreeNode#0;class#LinkedTree#0" expanded="false" />
+            <element signature="method#addRight#0;class#TreeNode#0;class#LinkedTree#0" expanded="false" />
+            <element signature="method#preOrderTravelRec#0;class#LinkedTree#0" expanded="false" />
+            <element signature="method#midOrderTravelRec#0;class#LinkedTree#0" expanded="false" />
+            <element signature="method#backOrderTravelRec#0;class#LinkedTree#0" expanded="false" />
+            <element signature="method#levelTravel#0;class#LinkedTree#0" expanded="false" />
+            <element signature="method#preOrderTravel#0;class#LinkedTree#0" expanded="false" />
+            <element signature="method#midOrderTravel#0;class#LinkedTree#0" expanded="false" />
+            <element signature="e#4723#4788#0" expanded="false" />
+            <element signature="method#getTreeDepthRec#0;class#LinkedTree#0" expanded="false" />
+            <element signature="method#getTreeNumRec#0;class#LinkedTree#0" expanded="false" />
+            <element signature="method#getNumForKthLevelRec#0;class#LinkedTree#0" expanded="false" />
+            <element signature="method#getLeafNumRec#0;class#LinkedTree#0" expanded="false" />
+            <element signature="method#reConstructTree#0;class#LinkedTree#0" expanded="false" />
+            <element signature="method#cat#0;class#LinkedTree#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LinkedTreeSummary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="145" column="22" lean-forward="false" selection-start-line="145" selection-start-column="22" selection-end-line="145" selection-end-column="22" />
+          <folding>
+            <element signature="method#preOrder#0;class#LinkedTreeSummary#0" expanded="false" />
+            <element signature="method#preOrderNonRecursive#0;class#LinkedTreeSummary#0" expanded="false" />
+            <element signature="method#inOrder#0;class#LinkedTreeSummary#0" expanded="false" />
+            <element signature="method#inOrderNonRecursive#0;class#LinkedTreeSummary#0" expanded="false" />
+            <element signature="method#postOrder#0;class#LinkedTreeSummary#0" expanded="false" />
+            <element signature="method#postOrderNoRecursive#0;class#LinkedTreeSummary#0" expanded="false" />
+            <element signature="class#LinkedTreePostOrderNode#0;class#LinkedTreeSummary#0" expanded="false" />
+            <element signature="method#findKthNode#0;class#LinkedTreeSummary#0" expanded="false" />
+            <element signature="method#reConstructTree#0;class#LinkedTreeSummary#0" expanded="false" />
+            <element signature="method#reConstructTree_fun#0;class#LinkedTreeSummary#0" expanded="false" />
+            <element signature="method#constructBinSearchTree#0;class#LinkedTreeSummary#0" expanded="false" />
+            <element signature="method#verifyPostOrderBST#0;class#LinkedTreeSummary#0" expanded="false" />
+            <element signature="method#verifyPostOrderBST_fun#0;class#LinkedTreeSummary#0" expanded="false" />
+            <element signature="method#Print_Z#0;class#LinkedTreeSummary#0" expanded="false" />
+            <element signature="e#7612#7632#0" expanded="false" />
+            <element signature="method#Print#0;class#LinkedTreeSummary#0" expanded="false" />
+            <element signature="method#levelReadLeft#0;class#LinkedTreeSummary#0" expanded="false" />
+            <element signature="method#calDepth#0;class#LinkedTreeSummary#0" expanded="false" />
+            <element signature="method#calLevelNodes#0;class#LinkedTreeSummary#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinarySearchTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding>
+            <element signature="method#BSTNode#0;class#BSTNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="method#constructBST#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="method#constructBST_byInsert#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="method#inOrder#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="method#searchBST#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="method#insertBST#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="method#insertBST_2#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="method#deleteBST#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="e#4226#4278#0" expanded="false" />
+            <element signature="method#getDeleteSuccessor#0;class#BinarySearchTree#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1007,14 +1054,16 @@
             <element signature="method#RightShift#0;class#AlgorithmSelf#0" expanded="false" />
             <element signature="method#Reverse#0;class#AlgorithmSelf#0" expanded="false" />
             <element signature="method#s1RightShiftS2#0;class#AlgorithmSelf#0" expanded="false" />
+            <element signature="method#calculateStrDistance_Rec#0;class#AlgorithmSelf#0" expanded="false" />
+            <element signature="method#calculateStrDistance#0;class#AlgorithmSelf#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Heap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1725">
-          <caret line="216" column="31" lean-forward="false" selection-start-line="216" selection-start-column="31" selection-end-line="216" selection-end-column="31" />
+        <state relative-caret-position="1325">
+          <caret line="200" column="38" lean-forward="false" selection-start-line="200" selection-start-column="38" selection-end-line="200" selection-end-column="38" />
           <folding>
             <element signature="method#siftdown#0;class#Heap#0" expanded="false" />
             <element signature="method#siftup#0;class#Heap#0" expanded="false" />
@@ -1029,29 +1078,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyArrayList.java">
+    <entry file="file://$PROJECT_DIR$/src/shortestPath.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="e#285#286#0" expanded="false" />
-            <element signature="e#310#311#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="600">
+          <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/BinarySearchTreeTest.java">
+    <entry file="file://$PROJECT_DIR$/src/in_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
-          <folding />
+        <state relative-caret-position="975">
+          <caret line="49" column="12" lean-forward="false" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+          <folding>
+            <element signature="e#564#595#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LinkedListSummary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3235">
-          <caret line="544" column="53" lean-forward="false" selection-start-line="544" selection-start-column="53" selection-end-line="544" selection-end-column="53" />
+        <state relative-caret-position="25">
+          <caret line="497" column="31" lean-forward="false" selection-start-line="497" selection-start-column="31" selection-end-line="497" selection-end-column="31" />
           <folding>
             <element signature="e#934#938#0" expanded="false" />
             <element signature="e#1721#1750#0" expanded="false" />
@@ -1083,86 +1131,6 @@
             <element signature="method#selectSort#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#binarySearch_Rec#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#binarySearch#0;class#LinkedListSummary#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shortestPath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LinkedTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="210" column="0" lean-forward="false" selection-start-line="210" selection-start-column="0" selection-end-line="210" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#addLeft#0;class#TreeNode#0;class#LinkedTree#0" expanded="false" />
-            <element signature="method#addRight#0;class#TreeNode#0;class#LinkedTree#0" expanded="false" />
-            <element signature="method#preOrderTravelRec#0;class#LinkedTree#0" expanded="false" />
-            <element signature="method#midOrderTravelRec#0;class#LinkedTree#0" expanded="false" />
-            <element signature="method#backOrderTravelRec#0;class#LinkedTree#0" expanded="false" />
-            <element signature="method#levelTravel#0;class#LinkedTree#0" expanded="false" />
-            <element signature="method#preOrderTravel#0;class#LinkedTree#0" expanded="false" />
-            <element signature="method#midOrderTravel#0;class#LinkedTree#0" expanded="false" />
-            <element signature="e#4723#4788#0" expanded="false" />
-            <element signature="method#getTreeDepthRec#0;class#LinkedTree#0" expanded="false" />
-            <element signature="method#getTreeNumRec#0;class#LinkedTree#0" expanded="false" />
-            <element signature="method#getNumForKthLevelRec#0;class#LinkedTree#0" expanded="false" />
-            <element signature="method#getLeafNumRec#0;class#LinkedTree#0" expanded="false" />
-            <element signature="method#reConstructTree#0;class#LinkedTree#0" expanded="false" />
-            <element signature="method#cat#0;class#LinkedTree#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BinarySearchTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-          <folding>
-            <element signature="method#BSTNode#0;class#BSTNode#0;class#BinarySearchTree#0" expanded="false" />
-            <element signature="method#constructBST#0;class#BinarySearchTree#0" expanded="false" />
-            <element signature="method#constructBST_byInsert#0;class#BinarySearchTree#0" expanded="false" />
-            <element signature="method#inOrder#0;class#BinarySearchTree#0" expanded="false" />
-            <element signature="method#searchBST#0;class#BinarySearchTree#0" expanded="false" />
-            <element signature="method#insertBST#0;class#BinarySearchTree#0" expanded="false" />
-            <element signature="method#insertBST_2#0;class#BinarySearchTree#0" expanded="false" />
-            <element signature="method#deleteBST#0;class#BinarySearchTree#0" expanded="false" />
-            <element signature="e#4226#4278#0" expanded="false" />
-            <element signature="method#getDeleteSuccessor#0;class#BinarySearchTree#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LinkedTreeSummary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="316" column="52" lean-forward="false" selection-start-line="316" selection-start-column="52" selection-end-line="316" selection-end-column="52" />
-          <folding>
-            <element signature="method#preOrder#0;class#LinkedTreeSummary#0" expanded="false" />
-            <element signature="method#preOrderNonRecursive#0;class#LinkedTreeSummary#0" expanded="false" />
-            <element signature="method#inOrder#0;class#LinkedTreeSummary#0" expanded="false" />
-            <element signature="method#inOrderNonRecursive#0;class#LinkedTreeSummary#0" expanded="false" />
-            <element signature="method#postOrder#0;class#LinkedTreeSummary#0" expanded="false" />
-            <element signature="method#postOrderNoRecursive#0;class#LinkedTreeSummary#0" expanded="false" />
-            <element signature="class#LinkedTreePostOrderNode#0;class#LinkedTreeSummary#0" expanded="false" />
-            <element signature="method#findKthNode#0;class#LinkedTreeSummary#0" expanded="false" />
-            <element signature="method#reConstructTree#0;class#LinkedTreeSummary#0" expanded="false" />
-            <element signature="method#reConstructTree_fun#0;class#LinkedTreeSummary#0" expanded="false" />
-            <element signature="method#constructBinSearchTree#0;class#LinkedTreeSummary#0" expanded="false" />
-            <element signature="method#verifyPostOrderBST#0;class#LinkedTreeSummary#0" expanded="false" />
-            <element signature="method#verifyPostOrderBST_fun#0;class#LinkedTreeSummary#0" expanded="false" />
-            <element signature="method#Print_Z#0;class#LinkedTreeSummary#0" expanded="false" />
-            <element signature="e#7612#7632#0" expanded="false" />
-            <element signature="method#Print#0;class#LinkedTreeSummary#0" expanded="false" />
-            <element signature="method#levelReadLeft#0;class#LinkedTreeSummary#0" expanded="false" />
-            <element signature="method#calDepth#0;class#LinkedTreeSummary#0" expanded="false" />
-            <element signature="method#calLevelNodes#0;class#LinkedTreeSummary#0" expanded="false" />
           </folding>
         </state>
       </provider>
