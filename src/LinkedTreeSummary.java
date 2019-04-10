@@ -318,7 +318,6 @@ public class LinkedTreeSummary {
         /**
          * 打印二叉树所有最左边的元素, 利用的是层次遍历的思想
          */
-        int depth = calDepth(root);
         Queue<TreeNode> q = new LinkedList<>();
         q.offer(root);
         int curCount=1, nextCount=0;
@@ -386,4 +385,40 @@ public class LinkedTreeSummary {
 
         return rtn;
     }
+
+    //===================================判断二叉树是否是平衡二叉树=======================================================
+    public static boolean isBalance_1(TreeNode root) {
+        /**
+         * 判断一棵树是不是二叉树, 此方法的时间复杂度为 O(n*n) 按先序遍历的方式来计算
+         * 空树我们认为也是平衡的
+         */
+        if (root == null) {
+            return true;
+        }
+        int leftHeight = calDepth(root.left);
+        int rightHeight = calDepth(root.right);
+        if (leftHeight-rightHeight>1 || leftHeight-rightHeight<-1) {
+            return false;
+        } else {
+            return isBalance_1(root.left)&&isBalance_1(root.right);
+        }
+    }
+    private static boolean is_balance = false;
+    public static int isBalance_2(TreeNode root) {
+        /**
+         * 判断一棵树是不是二叉树, 此方法的时间复杂度为 O(n) 按后序遍历的方式来计算
+         */
+        if (root == null) {
+            is_balance = true;
+            return 0;
+        }
+        int left = isBalance_2(root.left);
+        int right = isBalance_2(root.right);
+        int depth = Math.max(left, right) + 1;
+        if (Math.abs(left-right) > 1) {
+            is_balance = false;
+        }
+        return depth;
+    }
+
 }

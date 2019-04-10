@@ -582,8 +582,6 @@ public class LinkedListSummary {
         return find;
     }
 
-
-
     //========================Java 数组实现快排========================
     private static void quickSort(int[] arr) {
         qsort(arr, 0, arr.length-1);
