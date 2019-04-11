@@ -213,4 +213,44 @@ public class AlgorithmSelf {
         return edit[s1.length][s2.length];
     }
 
+    /**
+     * 求两个字符串之间的最长公共子串, 不要求连续
+     */
+    public static int longestSubString(String a, String b) {
+        int[][] dp = new int[a.length()+1][b.length()+1];
+        for (int i = 0; i < a.length()+1; i++) {
+            dp[i][0] = 0;
+        }
+        for (int i = 0; i < b.length()+1; i++) {
+            dp[0][i] = 0;
+        }
+        for (int i = 1; i < a.length() + 1; i++) {
+            for (int j = 1; j < b.length() + 1; j++) {
+                if (a.charAt(i) == b.charAt(j)) {
+                    dp[i][j] = dp[i-1][j-1] + 1;
+                } else {
+                    dp[i][j] = Math.max(dp[i-1][j], dp[i][j-1]);
+                }
+            }
+        }
+        return dp[a.length()][b.length()];
+    }
+    /**
+     * 求两个字符串之间的最长公共子序列, 要求连续
+     */
+    public static int longestSubStr(String a, String b) {
+        int[][] dp = new int[a.length()+1][b.length()+1];
+        int max = Integer.MIN_VALUE;
+        for (int i = 1; i < a.length() + 1; i++) {
+            for (int j = 1; j < b.length() + 1; j++) {
+                if (a.charAt(i) == b.charAt(j)) {
+                    dp[i][j] = dp[i-1][j-1] + 1;
+                    max = Math.max(max, dp[i][j]);
+                } else {
+                    dp[i][j] = 0;
+                }
+            }
+        }
+        return max;
+    }
 }
