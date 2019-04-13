@@ -7,6 +7,7 @@
     <list default="true" id="4f026551-ef88-4ec9-a052-76fd74ef1373" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/AlgorithmSelf.java" afterPath="$PROJECT_DIR$/src/AlgorithmSelf.java" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedListSummary.java" afterPath="$PROJECT_DIR$/src/LinkedListSummary.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -77,16 +78,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BinarySearchTree.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BinarySearchTree.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BinarySearchTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="89" column="32" lean-forward="true" selection-start-line="89" selection-start-column="32" selection-end-line="89" selection-end-column="32" />
+            <state relative-caret-position="450">
+              <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
               <folding>
                 <element signature="method#BSTNode#0;class#BSTNode#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="method#constructBST#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="method#constructBST_byInsert#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="method#inOrder#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="method#searchBST#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="method#insertBST#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="method#insertBST_2#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="method#deleteBST#0;class#BinarySearchTree#0" expanded="false" />
@@ -97,24 +99,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AlgorithmSelf.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AlgorithmSelf.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AlgorithmSelf.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="248" column="24" lean-forward="true" selection-start-line="248" selection-start-column="24" selection-end-line="248" selection-end-column="24" />
+            <state relative-caret-position="370">
+              <caret line="113" column="25" lean-forward="false" selection-start-line="113" selection-start-column="25" selection-end-line="113" selection-end-column="25" />
               <folding>
                 <element signature="method#MaxSubSum_1#0;class#AlgorithmSelf#0" expanded="false" />
                 <element signature="method#MaxSubSum_2#0;class#AlgorithmSelf#0" expanded="false" />
                 <element signature="method#MaxSubSum_3#0;class#AlgorithmSelf#0" expanded="false" />
                 <element signature="method#MaxSubSum2D#0;class#AlgorithmSelf#0" expanded="false" />
                 <element signature="method#BC#0;class#AlgorithmSelf#0" expanded="false" />
-                <element signature="method#MaxListLen#0;class#AlgorithmSelf#0" expanded="false" />
                 <element signature="method#RightShift#0;class#AlgorithmSelf#0" expanded="false" />
                 <element signature="method#Reverse#0;class#AlgorithmSelf#0" expanded="false" />
                 <element signature="method#s1RightShiftS2#0;class#AlgorithmSelf#0" expanded="false" />
                 <element signature="method#calculateStrDistance_Rec#0;class#AlgorithmSelf#0" expanded="false" />
                 <element signature="method#calculateStrDistance#0;class#AlgorithmSelf#0" expanded="false" />
                 <element signature="method#longestSubString#0;class#AlgorithmSelf#0" expanded="false" />
+                <element signature="method#longestSubStr#0;class#AlgorithmSelf#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -123,8 +125,8 @@
       <file leaf-file-name="LinkedListSummary.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LinkedListSummary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3225">
-              <caret line="582" column="5" lean-forward="false" selection-start-line="582" selection-start-column="5" selection-end-line="582" selection-end-column="5" />
+            <state relative-caret-position="674">
+              <caret line="706" column="56" lean-forward="false" selection-start-line="706" selection-start-column="56" selection-end-line="706" selection-end-column="56" />
               <folding>
                 <element signature="e#934#938#0" expanded="false" />
                 <element signature="e#1721#1750#0" expanded="false" />
@@ -149,6 +151,7 @@
                 <element signature="method#getFirstNodeInCycle#0;class#LinkedListSummary#0" expanded="false" />
                 <element signature="method#isIntersect_CheckLastNode#0;class#LinkedListSummary#0" expanded="false" />
                 <element signature="method#isIntersect_ReturnFirstNode#0;class#LinkedListSummary#0" expanded="false" />
+                <element signature="docComment;method#isIntersect_hasCycle#0;class#LinkedListSummary#0" expanded="false" />
                 <element signature="method#isIntersect_hasCycle#0;class#LinkedListSummary#0" expanded="false" />
                 <element signature="method#qsort#0;class#LinkedListSummary#0" expanded="false" />
                 <element signature="method#partition#0;class#LinkedListSummary#0" expanded="false" />
@@ -176,7 +179,7 @@
       <file leaf-file-name="Heap.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Heap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1325">
+            <state relative-caret-position="820">
               <caret line="200" column="38" lean-forward="false" selection-start-line="200" selection-start-column="38" selection-end-line="200" selection-end-column="38" />
               <folding>
                 <element signature="method#siftdown#0;class#Heap#0" expanded="false" />
@@ -242,9 +245,9 @@
         <option value="$PROJECT_DIR$/src/in_test.java" />
         <option value="$PROJECT_DIR$/src/BinarySearchTree.java" />
         <option value="$PROJECT_DIR$/src/Heap.java" />
-        <option value="$PROJECT_DIR$/src/LinkedListSummary.java" />
         <option value="$PROJECT_DIR$/src/LinkedTreeSummary.java" />
         <option value="$PROJECT_DIR$/src/AlgorithmSelf.java" />
+        <option value="$PROJECT_DIR$/src/LinkedListSummary.java" />
       </list>
     </option>
   </component>
@@ -254,8 +257,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="1912" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
@@ -298,10 +301,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -566,7 +569,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -581,7 +584,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17324094" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1748401" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -608,7 +611,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="56" />
+      <option name="time" value="59" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -662,6 +665,7 @@
             <element signature="method#getFirstNodeInCycle#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#isIntersect_CheckLastNode#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#isIntersect_ReturnFirstNode#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="docComment;method#isIntersect_hasCycle#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#isIntersect_hasCycle#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#qsort#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#partition#0;class#LinkedListSummary#0" expanded="false" />
@@ -720,6 +724,7 @@
             <element signature="method#getFirstNodeInCycle#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#isIntersect_CheckLastNode#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#isIntersect_ReturnFirstNode#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="docComment;method#isIntersect_hasCycle#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#isIntersect_hasCycle#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#qsort#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#partition#0;class#LinkedListSummary#0" expanded="false" />
@@ -786,6 +791,7 @@
             <element signature="method#getFirstNodeInCycle#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#isIntersect_CheckLastNode#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#isIntersect_ReturnFirstNode#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="docComment;method#isIntersect_hasCycle#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#isIntersect_hasCycle#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#qsort#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#partition#0;class#LinkedListSummary#0" expanded="false" />
@@ -843,6 +849,7 @@
             <element signature="method#getFirstNodeInCycle#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#isIntersect_CheckLastNode#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#isIntersect_ReturnFirstNode#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="docComment;method#isIntersect_hasCycle#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#isIntersect_hasCycle#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#qsort#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#partition#0;class#LinkedListSummary#0" expanded="false" />
@@ -899,6 +906,7 @@
             <element signature="method#getFirstNodeInCycle#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#isIntersect_CheckLastNode#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#isIntersect_ReturnFirstNode#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="docComment;method#isIntersect_hasCycle#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#isIntersect_hasCycle#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#qsort#0;class#LinkedListSummary#0" expanded="false" />
             <element signature="method#partition#0;class#LinkedListSummary#0" expanded="false" />
@@ -973,76 +981,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="975">
           <caret line="49" column="12" lean-forward="false" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
-          <folding>
-            <element signature="e#564#595#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shortestPath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Heap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1325">
-          <caret line="200" column="38" lean-forward="false" selection-start-line="200" selection-start-column="38" selection-end-line="200" selection-end-column="38" />
-          <folding>
-            <element signature="method#siftdown#0;class#Heap#0" expanded="false" />
-            <element signature="method#siftup#0;class#Heap#0" expanded="false" />
-            <element signature="method#buildHeap_siftdown#0;class#Heap#0" expanded="false" />
-            <element signature="method#buildHeap_siftup#0;class#Heap#0" expanded="false" />
-            <element signature="method#siftdown_max#0;class#Heap#0" expanded="false" />
-            <element signature="method#siftup_max#0;class#Heap#0" expanded="false" />
-            <element signature="method#buildHeap_siftdown_max#0;class#Heap#0" expanded="false" />
-            <element signature="method#buildHeap_siftup_max#0;class#Heap#0" expanded="false" />
-            <element signature="method#delete_top#0;class#Heap#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LinkedListSummary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3225">
-          <caret line="582" column="5" lean-forward="false" selection-start-line="582" selection-start-column="5" selection-end-line="582" selection-end-column="5" />
-          <folding>
-            <element signature="e#934#938#0" expanded="false" />
-            <element signature="e#1721#1750#0" expanded="false" />
-            <element signature="method#display#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#getListLength#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#reverseList_1#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#reverseList_2#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#reverseList_3#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#reGetKthNode#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#getMiddleNode#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#reversePrintListRec#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#reversePrintListStack#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#mergeSortedList#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#mergeSortedListRec#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#listSort#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#insertionSortList#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="e#8955#8987#0" expanded="false" />
-            <element signature="method#quickSort#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#deleteNode#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#hasCycle#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#getFirstNodeInCycleHashMap#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#getFirstNodeInCycle#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#isIntersect_CheckLastNode#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#isIntersect_ReturnFirstNode#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#isIntersect_hasCycle#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#qsort#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#partition#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#merge_sort#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#merge#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#bubbleSort#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#selectSort#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#binarySearch_Rec#0;class#LinkedListSummary#0" expanded="false" />
-            <element signature="method#binarySearch#0;class#LinkedListSummary#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1069,20 +1007,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BinarySearchTree.java">
+    <entry file="file://$PROJECT_DIR$/src/AlgorithmSelf.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="89" column="32" lean-forward="true" selection-start-line="89" selection-start-column="32" selection-end-line="89" selection-end-column="32" />
+        <state relative-caret-position="370">
+          <caret line="113" column="25" lean-forward="false" selection-start-line="113" selection-start-column="25" selection-end-line="113" selection-end-column="25" />
           <folding>
-            <element signature="method#BSTNode#0;class#BSTNode#0;class#BinarySearchTree#0" expanded="false" />
-            <element signature="method#constructBST#0;class#BinarySearchTree#0" expanded="false" />
-            <element signature="method#constructBST_byInsert#0;class#BinarySearchTree#0" expanded="false" />
-            <element signature="method#inOrder#0;class#BinarySearchTree#0" expanded="false" />
-            <element signature="method#insertBST#0;class#BinarySearchTree#0" expanded="false" />
-            <element signature="method#insertBST_2#0;class#BinarySearchTree#0" expanded="false" />
-            <element signature="method#deleteBST#0;class#BinarySearchTree#0" expanded="false" />
-            <element signature="e#4226#4278#0" expanded="false" />
-            <element signature="method#getDeleteSuccessor#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="method#MaxSubSum_1#0;class#AlgorithmSelf#0" expanded="false" />
+            <element signature="method#MaxSubSum_2#0;class#AlgorithmSelf#0" expanded="false" />
+            <element signature="method#MaxSubSum_3#0;class#AlgorithmSelf#0" expanded="false" />
+            <element signature="method#MaxSubSum2D#0;class#AlgorithmSelf#0" expanded="false" />
+            <element signature="method#BC#0;class#AlgorithmSelf#0" expanded="false" />
+            <element signature="method#RightShift#0;class#AlgorithmSelf#0" expanded="false" />
+            <element signature="method#Reverse#0;class#AlgorithmSelf#0" expanded="false" />
+            <element signature="method#s1RightShiftS2#0;class#AlgorithmSelf#0" expanded="false" />
+            <element signature="method#calculateStrDistance_Rec#0;class#AlgorithmSelf#0" expanded="false" />
+            <element signature="method#calculateStrDistance#0;class#AlgorithmSelf#0" expanded="false" />
+            <element signature="method#longestSubString#0;class#AlgorithmSelf#0" expanded="false" />
+            <element signature="method#longestSubStr#0;class#AlgorithmSelf#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shortestPath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Heap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="820">
+          <caret line="200" column="38" lean-forward="false" selection-start-line="200" selection-start-column="38" selection-end-line="200" selection-end-column="38" />
+          <folding>
+            <element signature="method#siftdown#0;class#Heap#0" expanded="false" />
+            <element signature="method#siftup#0;class#Heap#0" expanded="false" />
+            <element signature="method#buildHeap_siftdown#0;class#Heap#0" expanded="false" />
+            <element signature="method#buildHeap_siftup#0;class#Heap#0" expanded="false" />
+            <element signature="method#siftdown_max#0;class#Heap#0" expanded="false" />
+            <element signature="method#siftup_max#0;class#Heap#0" expanded="false" />
+            <element signature="method#buildHeap_siftdown_max#0;class#Heap#0" expanded="false" />
+            <element signature="method#buildHeap_siftup_max#0;class#Heap#0" expanded="false" />
+            <element signature="method#delete_top#0;class#Heap#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LinkedListSummary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="674">
+          <caret line="706" column="56" lean-forward="false" selection-start-line="706" selection-start-column="56" selection-end-line="706" selection-end-column="56" />
+          <folding>
+            <element signature="e#934#938#0" expanded="false" />
+            <element signature="e#1721#1750#0" expanded="false" />
+            <element signature="method#display#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#getListLength#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#reverseList_1#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#reverseList_2#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#reverseList_3#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#reGetKthNode#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#getMiddleNode#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#reversePrintListRec#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#reversePrintListStack#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#mergeSortedList#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#mergeSortedListRec#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#listSort#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#insertionSortList#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="e#8955#8987#0" expanded="false" />
+            <element signature="method#quickSort#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#deleteNode#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#hasCycle#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#getFirstNodeInCycleHashMap#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#getFirstNodeInCycle#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#isIntersect_CheckLastNode#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#isIntersect_ReturnFirstNode#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="docComment;method#isIntersect_hasCycle#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#isIntersect_hasCycle#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#qsort#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#partition#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#merge_sort#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#merge#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#bubbleSort#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#selectSort#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#binarySearch_Rec#0;class#LinkedListSummary#0" expanded="false" />
+            <element signature="method#binarySearch#0;class#LinkedListSummary#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1116,23 +1125,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AlgorithmSelf.java">
+    <entry file="file://$PROJECT_DIR$/src/BinarySearchTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="248" column="24" lean-forward="true" selection-start-line="248" selection-start-column="24" selection-end-line="248" selection-end-column="24" />
+        <state relative-caret-position="450">
+          <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
           <folding>
-            <element signature="method#MaxSubSum_1#0;class#AlgorithmSelf#0" expanded="false" />
-            <element signature="method#MaxSubSum_2#0;class#AlgorithmSelf#0" expanded="false" />
-            <element signature="method#MaxSubSum_3#0;class#AlgorithmSelf#0" expanded="false" />
-            <element signature="method#MaxSubSum2D#0;class#AlgorithmSelf#0" expanded="false" />
-            <element signature="method#BC#0;class#AlgorithmSelf#0" expanded="false" />
-            <element signature="method#MaxListLen#0;class#AlgorithmSelf#0" expanded="false" />
-            <element signature="method#RightShift#0;class#AlgorithmSelf#0" expanded="false" />
-            <element signature="method#Reverse#0;class#AlgorithmSelf#0" expanded="false" />
-            <element signature="method#s1RightShiftS2#0;class#AlgorithmSelf#0" expanded="false" />
-            <element signature="method#calculateStrDistance_Rec#0;class#AlgorithmSelf#0" expanded="false" />
-            <element signature="method#calculateStrDistance#0;class#AlgorithmSelf#0" expanded="false" />
-            <element signature="method#longestSubString#0;class#AlgorithmSelf#0" expanded="false" />
+            <element signature="method#BSTNode#0;class#BSTNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="method#constructBST#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="method#constructBST_byInsert#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="method#inOrder#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="method#searchBST#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="method#insertBST#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="method#insertBST_2#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="method#deleteBST#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="e#4226#4278#0" expanded="false" />
+            <element signature="method#getDeleteSuccessor#0;class#BinarySearchTree#0" expanded="false" />
           </folding>
         </state>
       </provider>

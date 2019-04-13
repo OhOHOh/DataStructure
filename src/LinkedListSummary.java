@@ -451,6 +451,9 @@ public class LinkedListSummary {
         }
         return flag;
     }
+    /**
+     * 判断是否有环, 若有环则返回环的起始点, 若无环则返回null
+     */
     private static Node getFirstNodeInCycleHashMap(Node head) {
         /**
          *  已知一个单链表中存在环，求进入环中的第一个节点,利用 hashmap
@@ -465,7 +468,7 @@ public class LinkedListSummary {
             } else {
                 map.put(h, true);
             }
-            h =h.next;
+            h = h.next;
         }
 
         return target;

@@ -34,7 +34,7 @@ public class AlgorithmSelf {
 
 
     /**
-     * 数组中最大子数组和
+     * 数组中最大子数组和, 子数组要连续!
      * -1 暴力解决, O(n^2)
      * -2 利用最大和的特性, 但是当数组全部为负数的时候, 需要添加一些新代码 O(n)
      */
@@ -111,7 +111,7 @@ public class AlgorithmSelf {
         return rtn;
     }
     /**
-     * 数组中最长递增子序列长度
+     * 数组中最长递增子序列长度, 不用连续
      */
     public static int MaxListLen(int[] a) {
         int maxLen = 0;
