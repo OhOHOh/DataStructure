@@ -21,9 +21,9 @@ public class LinkedTreeSummary {
         }
     }
 
-    int KthNode_index = 0;
+    private int KthNode_index = 0;
 
-    //========================Java 二叉树的几种遍历========================
+    //=============================================Java 二叉树的几种遍历=============================================
     public void preOrder(TreeNode root) {
         /**
          *  前序遍历 - 递归
@@ -420,5 +420,46 @@ public class LinkedTreeSummary {
         }
         return depth;
     }
-
+    
+    /**
+     * 输入两棵二叉树A，B，判断B是不是A的子结构。（ps：我们约定空树不是任意一个树的子结构）
+     * 剑指offer原题
+     */
+    public boolean HasSubtree(LinkedTreeSummary.TreeNode root1, LinkedTreeSummary.TreeNode root2) {
+        if (root2==null || root1==null) {
+            return false;
+        }
+        return isSubTree(root1, root2) ||
+                HasSubtree(root1.left, root2) ||
+                HasSubtree(root1.right, root2);
+    }
+    private static boolean isSubTree(LinkedTreeSummary.TreeNode root1, LinkedTreeSummary.TreeNode root2) {
+        if (root2 == null) {
+            return true;
+        }
+        if (root1 == null) {
+            return false;
+        }
+        if (root1.val == root2.val) {
+            return isSubTree(root1.left, root2.left)&&isSubTree(root1.right, root2.right);
+        } else {
+            return false;
+        }
+    }
+    /**
+     * 操作给定的二叉树，将其变换为源二叉树的镜像
+     * 剑指offer原题
+     */
+    public static void Mirror(LinkedTreeSummary.TreeNode root) {
+        if (root != null) {
+            Mirror_fun(root);
+            Mirror(root.left);
+            Mirror(root.right);
+        }
+    }
+    private static void Mirror_fun(LinkedTreeSummary.TreeNode root) {
+        LinkedTreeSummary.TreeNode tmp = root.left;
+        root.left = root.right;
+        root.right = tmp;
+    }
 }

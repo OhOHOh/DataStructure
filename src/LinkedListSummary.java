@@ -40,16 +40,6 @@ public class LinkedListSummary {
 //            temp.next = new Node(in.nextInt());
 //            temp = temp.next;
 //        }
-        int[] arr = {2,10,4,9,6,4,1};
-        quickSort(arr);
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
-        }
-        System.out.println();
-        System.out.println("==========================");
-        int[] sort_a = {1, 3, 5, 6, 8};
-        System.out.println(binarySearch_Rec(sort_a, 8, 0, sort_a.length-1));
-        System.out.println(binarySearch(sort_a, 0));
 
 //        if (in.hasNext()) {
 //            head = new Node(Integer.valueOf(in.next()));
@@ -543,7 +533,6 @@ public class LinkedListSummary {
         }
         return target;
     }
-
     /**
      * 如果链表有环, 怎么办? 分情况讨论:(现在不知道链表有没有环、不知道2个链表是不是相交了)
      * 1. 如果两个链表都没有环，那么同原算法;
@@ -585,140 +574,30 @@ public class LinkedListSummary {
         return find;
     }
 
-    //========================Java 数组实现快排========================
-    private static void quickSort(int[] arr) {
-        qsort(arr, 0, arr.length-1);
-    }
-    private static void qsort(int[] arr, int low, int high) {
-        if (low < high) {
-            int pivot = partition(arr, low, high);
-            qsort(arr, low, pivot-1);
-            qsort(arr, pivot+1, high);
+    /**
+     * 输入一个链表，输出该链表中倒数第k个结点。
+     */
+    public static Node FindKthToTail(Node head, int k) {
+        if (k <= 0) {
+            return null;
         }
-    }
-    private static int partition(int[] arr, int low, int high) {
-        int pivot = arr[low];
-
-        while (low < high) {
-            while (low < high && arr[high] >= pivot) {
-                high--;
+        Node p = head;
+        Node q = head;
+        boolean k_is_out_of_bound = false;
+        for (int i = 0; i < k; i++) {
+            if (q == null) {
+                k_is_out_of_bound = true;
+                break;
             }
-            arr[low] = arr[high];
-            while (low < high && arr[low] <= pivot) {
-                low++;
-            }
-            arr[high] = arr[low];
+            q = q.next;
         }
-
-        arr[low] = pivot;
-        return low;
-    }
-
-    //========================Java 数组实现归并排序========================
-    private static void merge_sort(int[] arr, int low, int high) {
-        /**
-         * 归并排序, 应该是先分解, 然后再归并(调用 merge)
-         */
-        int mid = (low+high) / 2;
-        if (low < high) {
-            merge_sort(arr, low, mid);
-            merge_sort(arr, mid+1, high);
-            merge(arr, low, mid, high);
+        if (k_is_out_of_bound) {
+            return null;
         }
-    }
-    private static void merge(int[] a, int low, int mid, int high) {
-        /**
-         * 将数组 a[low, ..., mid] 和数组 a[mid+1, ..., high] 进行合并
-         */
-        int[] temp = new int[high-low+1];
-        int i=low, j=mid+1;
-        int k = 0;
-        // 将较小的数字先移到新数组中, 从小到大排序
-        while (i<=mid && j<=high) {
-            if (a[i] < a[j]) {
-                temp[k++] = a[i++];
-            } else {
-                temp[k++] = a[j++];
-            }
-        }// while
-        while (i <= mid) {
-            temp[k++] = a[i++];
+        while (q != null) {
+            p = p.next;
+            q = q.next;
         }
-        while (j <= high) {
-            temp[k++] = a[j++];
-        }
-        // 将新数组覆盖 a 中 low-high 的部分
-        for (int x = 0; x <= temp.length; x++) {
-            a[x+low] = temp[x];
-        }
-    }
-
-    //========================Java 数组实现冒泡排序========================
-    public static void bubbleSort(int[] a) {
-        /**
-         * 外层有 len-1 轮, 每运行一轮, 数组最右边的一个就不用考虑了(已经是这轮中的最大值了)
-         */
-        int temp;
-        int len = a.length;
-        for (int i = 1; i < len; i++) {
-            for (int j = 0; j < len-i; j++) {
-                if (a[j] > a[j+1]) {
-                    temp = a[j];
-                    a[j] = a[j+1];
-                    a[j+1] = temp;
-                }
-            }
-        }
-    }
-    //========================Java 数组实现选择排序========================
-    public static void selectSort(int[] a) {
-        int len = a.length;
-        int temp;
-        for (int i = 0; i < len-1; i++) {
-            int k = i; //记录在这轮循环中最小值的下标
-            for (int j = i+1; j < len; j++) {
-                if (a[j] < a[k]) {
-                    k = j;
-                }
-            }
-            temp = a[k];
-            a[k] = a[i];
-            a[i] = temp;
-        }
-    }
-    //========================Java 数组实现二分查找========================
-    public static int binarySearch_Rec(int[] a, int target, int s, int e) {
-        /**
-         * 在有序数组中寻找 target, 若找到,返回对应index; 若没有找到,则返回-1
-         */
-        if (s > e) {
-            return -1;
-        }
-        int mid = (s - e) / 2 + e;
-        if (a[mid] == target) {
-            return mid;
-        }
-        if (target > a[mid]) {
-            return binarySearch_Rec(a, target, mid + 1, e);
-        } else {
-            return binarySearch_Rec(a, target, s, mid - 1);
-        }
-    }
-    public static int binarySearch(int[] a, int target) {
-        int len = a.length;
-        int low = 0, high = len-1;
-        int mid = 0; //单纯初始化
-        while (low <= high) {  // <= !!!
-            mid = low + (high - low) / 2;
-            if (a[mid] == target) {
-                return mid;
-            }
-            if (target > a[mid]) {
-                low = mid + 1;
-            } else {
-                high = mid - 1;
-            }
-        }
-        return -1;
+        return p;
     }
 }
