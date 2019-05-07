@@ -1,3 +1,6 @@
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Stack;
 
 public class Array_StringSummary {
@@ -402,5 +405,17 @@ public class Array_StringSummary {
         }
         return max;
     }
+
+
+    //========================实现易混淆数========================
+//    private final static int[] array_for_confusingNumber = {0, 1, -1, -1, -1, -1, 9, -1, 8, 6};
+//    public static boolean confusingNumber(int N) {
+//        if (N < 0) {
+//            return false;
+//        }
+//        String N_str = String.valueOf(N);
+//        String N_str_2 = Collections.reverse(N_str);
+//
+//    }
 
 }
