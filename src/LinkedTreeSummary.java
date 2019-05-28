@@ -422,6 +422,24 @@ public class LinkedTreeSummary {
     }
 
     /**
+     * 给定一个整数n, 求以 1...n 为节点组成的二叉搜索树有多少种
+     * https://leetcode-cn.com/problems/unique-binary-search-trees/comments/
+     */
+    public static int numBSTrees(int n) {
+        int[] dp = new int[n+1];
+        dp[0]=1;
+        dp[1]=1;
+
+        for (int i = 2; i < n+1; i++) {
+            for (int j = 1; j < i+1; j++) {
+                dp[i] += dp[j-1] * dp[i-j];
+            }
+        }
+        return dp[n];
+    }
+
+
+    /**
      * 输入两棵二叉树A，B，判断B是不是A的子结构。（ps：我们约定空树不是任意一个树的子结构）
      * 剑指offer原题
      */

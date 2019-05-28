@@ -53,9 +53,9 @@ public class Array_StringSummary {
     }
     private static void qsort(int[] arr, int low, int high) {
         if (low < high) {
-            int pivot = partition(arr, low, high);
-            qsort(arr, low, pivot-1);
-            qsort(arr, pivot+1, high);
+            int pivot_index = partition(arr, low, high);
+            qsort(arr, low, pivot_index-1);
+            qsort(arr, pivot_index+1, high);
         }
     }
     private static int partition(int[] arr, int low, int high) {
