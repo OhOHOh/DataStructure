@@ -437,6 +437,35 @@ public class LinkedTreeSummary {
         }
         return dp[n];
     }
+    /**
+     * 给定一个整数n, 求以 1...n 为节点组成的二叉搜索树有多少种, 求出所有的这些BST
+     */
+    public static List<TreeNode> generateTrees(int n) {
+        if (n == 0) {
+            return new LinkedList<TreeNode>();
+        }
+        return generateTrees(1, n);
+    }
+    private static List<TreeNode> generateTrees(int start, int end) {
+        List<TreeNode> res = new LinkedList<>();
+        if (start > end) {
+            res.add(null);
+            return res;
+        }
+        for (int i = start; i <= end; i++) {
+            List<TreeNode> subLeftTree = generateTrees(start, i-1);
+            List<TreeNode> subRightTree = generateTrees(i+1, end);
+            for (TreeNode left: subLeftTree) {
+                for (TreeNode right: subRightTree) {
+                    TreeNode node = new TreeNode(i);
+                    node.left = left;
+                    node.right = right;
+                    res.add(node);
+                }
+            }
+        }
+        return res;
+    }
 
 
     /**
