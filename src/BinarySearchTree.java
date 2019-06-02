@@ -1,12 +1,15 @@
 import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
 public class BinarySearchTree {
 
     public static class BSTNode {
         int val;
         BSTNode left;
         BSTNode right;
-
         private BSTNode(int val) {
             this.val = val;
             this.left = null;
@@ -259,4 +262,105 @@ public class BinarySearchTree {
         }
         return rtn;
     }
+
+
+    //=============================================二叉搜索树的几个问题=============================================
+    /**
+     * 给定一个整数n, 求以 1...n 为节点组成的二叉搜索树有多少种
+     * https://leetcode-cn.com/problems/unique-binary-search-trees/comments/
+     */
+    public static int numBSTrees(int n) {
+        int[] dp = new int[n+1];
+        dp[0]=1;
+        dp[1]=1;
+
+        for (int i = 2; i < n+1; i++) {
+            for (int j = 1; j < i+1; j++) {
+                dp[i] += dp[j-1] * dp[i-j];
+            }
+        }
+        return dp[n];
+    }
+    /**
+     * 给定一个整数n, 求以 1...n 为节点组成的二叉搜索树有多少种, 求出所有的这些BST
+     */
+    public static List<BSTNode> generateTrees(int n) {
+        if (n == 0) {
+            return new LinkedList<BSTNode>();
+        }
+        return generateTrees(1, n);
+    }
+    private static List<BSTNode> generateTrees(int start, int end) {
+        List<BSTNode> res = new LinkedList<>();
+        if (start > end) {
+            res.add(null);
+            return res;
+        }
+        for (int i = start; i <= end; i++) {
+            List<BSTNode> subLeftTree = generateTrees(start, i-1);
+            List<BSTNode> subRightTree = generateTrees(i+1, end);
+            for (BSTNode left: subLeftTree) {
+                for (BSTNode right: subRightTree) {
+                    BSTNode node = new BSTNode(i);
+                    node.left = left;
+                    node.right = right;
+                    res.add(node);
+                }
+            }
+        }
+        return res;
+    }
+
+    /**
+     * 验证是否是二叉搜索树
+     */
+    private boolean is_validBST_result = true;
+    public boolean isValidBST(BSTNode root) {
+        if (root == null) {
+            return true;
+        }
+        isValidBST_fun(root);
+        return is_validBST_result;
+    }
+    private void isValidBST_fun(BSTNode root) {
+        if (root.left==null && root.right==null) {
+            return;
+        }
+        if (root.left != null) {
+            if (root.val > root.left.val) {
+                isValidBST_fun(root.left);
+            } else {
+                is_validBST_result = false;
+                return;
+            }
+        }
+        if (root.right != null) {
+            if (root.val < root.right.val) {
+                isValidBST_fun(root.right);
+            } else {
+                is_validBST_result = false;
+                return;
+            }
+        }
+    }
+    // 以上的思路是错误的! 主要思路是：中序遍历之后得到的数组是否是升序的即可！
+    private List<Integer> tmp_BST = new ArrayList<>();
+    private void dps(BSTNode root) {
+        if (root != null) {
+            dps(root.left);
+            tmp_BST.add(root.val);
+            dps(root.right);
+        }
+    }
+    public boolean isValidBST_final(BSTNode root) {
+        dps(root);
+        for (int i = 0; i < tmp_BST.size()-1; i++) {
+            if (tmp_BST.get(i) >= tmp_BST.get(i+1)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+
 }
