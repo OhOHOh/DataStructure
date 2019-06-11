@@ -172,10 +172,11 @@ public class LinkedTreeSummary {
         return null;
     }
 
+//===================================重新构建二叉树===================================
+    /**
+     * 给出一颗二叉树的前序遍历与中序遍历, 重建这棵树
+     */
     public TreeNode reConstructTree(int[] pre, int[] in) {
-        /**
-         * 给出一颗二叉树的前序遍历与中序遍历, 重建这棵树
-         */
         TreeNode root = reConstructTree_fun(pre, 0, pre.length - 1, in, 0, in.length - 1);
         return root;
     }
@@ -192,6 +193,28 @@ public class LinkedTreeSummary {
         }// for
         return root;
     }
+    /**
+     * 给出一颗二叉树的后序遍历与中序遍历, 重建这棵树
+     */
+    public TreeNode reBuildTree(int[] in, int[] post) {
+        TreeNode root = reBuildTree_fun(in, 0, in.length-1, post, 0, post.length-1);
+        return root;
+    }
+    private TreeNode reBuildTree_fun(int[] in, int inStart, int inEnd, int[] post, int postStart, int postEnd) {
+        if (inStart>inEnd || postStart>postEnd) {
+            return null;
+        }
+        TreeNode root = new TreeNode(post[postEnd]);
+        for (int i = inStart; i <= inEnd; i++) {
+            if (post[postEnd] == in[i]) {
+                root.left = reBuildTree_fun(in, inStart, i-1, post, postStart, postStart+i-inStart-1);
+                root.right = reBuildTree_fun(in, i+1, inEnd, post, postStart+i-inStart, postEnd-1);
+                break;
+            }
+        }// for
+        return root;
+    }
+
 
     public TreeNode constructBinSearchTree(int[] arr) {
         /**
@@ -220,40 +243,6 @@ public class LinkedTreeSummary {
             }
         }//for
         return root;
-    }
-
-    public boolean verifyPostOrderBST(int[] a) {
-        /**
-         * 判断数组是否是一颗二叉查找树的后序遍历
-         */
-        if (a == null || a.length <= 0) {
-            return false;
-        }
-        if (a.length == 1) {
-            return true;
-        }
-
-        return verifyPostOrderBST_fun(a, 0, a.length - 1);
-    }
-    private boolean verifyPostOrderBST_fun(int[] a, int low, int high) {
-        if (low >= high) {
-            return true;
-        }
-        int i = low;
-        while (a[i] < a[high]) {
-            i++;
-        }
-        int j = i;
-        while (j < high) {
-            if (a[j] < a[high]) {
-                return false;
-            }
-            j++;
-        }
-        boolean left = verifyPostOrderBST_fun(a, low, i - 1);
-        boolean right = verifyPostOrderBST_fun(a, i, high - 1);
-
-        return left && right;
     }
 
     private ArrayList<ArrayList<Integer>> Print_Z(TreeNode root) {

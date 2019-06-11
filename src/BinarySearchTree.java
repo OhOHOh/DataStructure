@@ -362,5 +362,39 @@ public class BinarySearchTree {
         return true;
     }
 
+    /**
+     * 判断数组是否是一颗二叉搜索树的后序遍历
+     */
+    public boolean verifyPostOrderBST(int[] a) {
+        if (a == null || a.length <= 0) {
+            return false;
+        }
+        if (a.length == 1) {
+            return true;
+        }
+
+        return verifyPostOrderBST_fun(a, 0, a.length - 1);
+    }
+    private boolean verifyPostOrderBST_fun(int[] a, int low, int high) {
+        if (low >= high) {
+            return true;
+        }
+        int i = low;
+        while (a[i] < a[high]) {
+            i++;
+        }
+        int j = i;
+        while (j < high) {
+            if (a[j] < a[high]) {
+                return false;
+            }
+            j++;
+        }
+        boolean left = verifyPostOrderBST_fun(a, low, i - 1);
+        boolean right = verifyPostOrderBST_fun(a, i, high - 1);
+
+        return left && right;
+    }
+
 
 }
