@@ -406,6 +406,24 @@ public class Array_StringSummary {
         return max;
     }
 
+    /**
+     * LeetCode11: 能容纳最多水的容器
+     * 设计2个指针, 从左和从右向中间逼近
+     * 可将这个问题拓展为2维的坐标轴!(x, y) 先按x轴进行排序, 然后再对y设置2个指针
+     */
+    public static int maxArea(int[] a) {
+        int l=0, r=a.length-1;
+        int contain = 0;
+        while (l < r) {
+            contain = Math.max(contain, (r-l)*Math.min(a[l], a[r]));
+            if (a[l] < a[r]) {
+                l = l + 1;
+            } else {
+                r = r - 1;
+            }
+        }
+        return contain;
+    }
 
     //========================实现易混淆数========================
 //    private final static int[] array_for_confusingNumber = {0, 1, -1, -1, -1, -1, 9, -1, 8, 6};
