@@ -501,4 +501,45 @@ public class LinkedTreeSummary {
         root.left = root.right;
         root.right = tmp;
     }
+    /**
+     * 寻找二叉树中2个节点 a, b 的最近公共祖先
+     */
+    public static TreeNode findClosestAncestor(TreeNode root, TreeNode a, TreeNode b) {
+        if (root == null) {
+            return null;
+        }
+        if (root==a || root==b) {
+            return root;
+        }
+        TreeNode left = findClosestAncestor(root.left, a, b);
+        TreeNode right = findClosestAncestor(root.right, a, b);
+
+        if (left!=null && right!=null) {
+            return root;
+        } else {
+            return left==null ? right : left;
+        }
+    }
+
+    /**
+     * 返回二叉树的最大深度
+     */
+    public static int max_depth(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        int left = max_depth(root.left);
+        int right = max_depth(root.right);
+        return Math.max(left, right)+1;
+    }
+    /**
+     * 求二叉树中任意2个节点距离的最大值
+     * 距离最大的2个节点, 必然是分别在root的左子树和右子树中
+     */
+    public static int max_distance(TreeNode root) {
+        int left = max_depth(root.left);
+        int right = max_depth(root.right);
+        return left+right;
+    }
+
 }

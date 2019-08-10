@@ -6,46 +6,50 @@ import java.util.Stack;
 public class Array_StringSummary {
     public static void main(String args[]) {
 //        int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        int[] a = {2,4,-7,5,2,-1,2,-4,3};
-        int[] a1 = {-10, -1, -3, -2};
-        int[][] a2D = {
-                {-1, -10, 2},
-                {-2, -3, 2},
-                {1, -2, 3}
-        };
-        int[] a3 = {1,2,4,5,6};
-        System.out.println(MaxSubSum_1(a1));
-        System.out.println(MaxSubSum_2(a));
-        System.out.println(MaxSubSum_3(a1));
-        System.out.println("===============");
-        System.out.println(MaxSubSum2D(a2D));
-        System.out.println("===============");
-        RightShift(a3, 3);
-        for (int i = 0; i < a3.length; i++) {
-            System.out.print(a3[i] + " ");
-        }
-        System.out.println();
-        System.out.println("===============");
-        char[] s1 = {'A', 'A', 'B', 'C', 'D'};
-        char[] s2 = {'C', 'D', 'A', 'A'};
-        System.out.println(s1RightShiftS2(s1, s2));
-        System.out.println("===============");
-        String sa = "travelling";
-        String sb = "traveling";
-        System.out.println(calculateStrDistance_Rec(sa.toCharArray(), 0, sa.length()-1, sb.toCharArray(), 0, sb.length()-1));
-        System.out.println(calculateStrDistance(sa.toCharArray(), sb.toCharArray()));
-        System.out.println();
-        System.out.println("==========================");
-        int[] arr = {2,10,4,9,6,4,1};
-        quickSort(arr);
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
-        }
-        System.out.println();
-        System.out.println("==========================");
-        int[] sort_a = {1, 3, 5, 6, 8};
-        System.out.println(binarySearch_Rec(sort_a, 8, 0, sort_a.length-1));
-        System.out.println(binarySearch(sort_a, 0));
+//        int[] a = {2,4,-7,5,2,-1,2,-4,3};
+//        int[] a1 = {-10, -1, -3, -2};
+//        int[][] a2D = {
+//                {-1, -10, 2},
+//                {-2, -3, 2},
+//                {1, -2, 3}
+//        };
+//        int[] a3 = {1,2,4,5,6};
+//        System.out.println(MaxSubSum_1(a1));
+//        System.out.println(MaxSubSum_2(a));
+//        System.out.println(MaxSubSum_3(a1));
+//        System.out.println("===============");
+//        System.out.println(MaxSubSum2D(a2D));
+//        System.out.println("===============");
+//        RightShift(a3, 3);
+//        for (int i = 0; i < a3.length; i++) {
+//            System.out.print(a3[i] + " ");
+//        }
+//        System.out.println();
+//        System.out.println("===============");
+//        char[] s1 = {'A', 'A', 'B', 'C', 'D'};
+//        char[] s2 = {'C', 'D', 'A', 'A'};
+//        System.out.println(s1RightShiftS2(s1, s2));
+//        System.out.println("===============");
+//        String sa = "travelling";
+//        String sb = "traveling";
+//        System.out.println(calculateStrDistance_Rec(sa.toCharArray(), 0, sa.length()-1, sb.toCharArray(), 0, sb.length()-1));
+//        System.out.println(calculateStrDistance(sa.toCharArray(), sb.toCharArray()));
+//        System.out.println();
+//        System.out.println("==========================");
+//        int[] arr = {2,10,4,9,6,4,1};
+//        quickSort(arr);
+//        for (int i = 0; i < arr.length; i++) {
+//            System.out.print(arr[i] + " ");
+//        }
+//        System.out.println();
+//        System.out.println("==========================");
+//        int[] sort_a = {1, 3, 5, 6, 8};
+//        System.out.println(binarySearch_Rec(sort_a, 8, 0, sort_a.length-1));
+//        System.out.println(binarySearch(sort_a, 0));
+//        System.out.println("==========================");
+        String s3 = "ADOBECODEBANC";
+        String t1 = "ABC";
+        System.out.println(minWindow(s3, t1));
     }// main
     //========================Java 数组实现快排========================
     private static void quickSort(int[] arr) {
@@ -423,6 +427,78 @@ public class Array_StringSummary {
             }
         }
         return contain;
+    }
+
+    /**
+     * LeetCode76 最小覆盖子串
+     * 1. 注意到题目的关键："所有字母的最小子串"，也就是说两个串都只能是字母。
+     2. 于是，可以开辟一个大小为64的数组，来存放数组中字母的频率(Frequency)。准确的说，
+     通过字母的ASCII码作为数组的索引，开辟空间的大小为26+6+26=58：26个大写字母，26个小写字母，
+     还有中间的6个非字母  A~Z[65~90]  非字母[91~96]  a~z[97~122]
+     3. 滑动窗口的使用：分三种情况来移动窗口：（这里令当前窗口的左右边界分别为l，r，窗口的大小为winSize=r-l+1）
+     1) 当winSize < t.size()  r++;  也就是窗口右边界向右移动
+     2) 当winSize == t.size() :
+     2.1) 当窗口中的字符已经符合要求了，直接返回return，已经找到了
+     2.2) 否则r++，窗口右边界向右移动
+     3) 当winSize > t.size()
+     2.1) 当窗口中的字符已经符合要求了，l++，窗口左边界向右移动
+     2.2) 否则r++，窗口右边界向右移动
+
+     4. 上面是滑动窗口的使用思路，具体实现上有一定的不同，下面是需要考虑到的要点：
+     1) 啥叫作窗口中的字符已经符合要求了？
+     1) 窗口滑动时的操作是关键
+     2) 要考虑到数组越界的问题
+     */
+    public static String minWindow(String s, String t) {
+        if (s.length() < t.length()) {
+            return "";
+        }
+        int l=0, r=-1, fl=-1, fr=s.length()-1;
+        int[] sFreq = new int[60];
+        int[] tFreq = new int[60];
+        for (int i = 0; i < t.length(); i++) {
+            tFreq[t.charAt(i)-'A']++;
+        }
+        while (l <= s.length()-t.length()) {
+            if (r-l+1 < t.length()) { //window.size < t.size
+                r++;
+                if (r == s.length()) { //数组越界
+                    break;
+                }
+                sFreq[s.charAt(r)-'A']++;
+                continue;
+            }
+            if (r-l+1 >= t.length()) { //window.size>=t.size
+                boolean succ = true;
+                for (int i = 0; i < 60; i++) {
+                    if (sFreq[i] < tFreq[i]) {
+                        succ = false;
+                        break;
+                    }
+                }
+                if (succ) { // 若能匹配
+                    if (r-l+1 == t.length()) { //若 window.size==t.size
+                        fl=l; fr=r;
+                        break;
+                    } else {//若 window.size > t.size
+                        if (r-l < fr-fl) {
+                            fl = l; fr=r;
+                        }
+                        sFreq[s.charAt(l)-'A']--;
+                        l++;
+                    }
+                } else { //若不能匹配
+                    if (r < s.length()-1) {
+                        r++;
+                        sFreq[s.charAt(r)-'A']++;
+                    } else {
+                        sFreq[s.charAt(l)-'A']--;
+                        l++;
+                    }
+                }
+            }
+        }//while
+        return fl==-1 ? "" : s.substring(fl, fr+1);
     }
 
     //========================实现易混淆数========================
