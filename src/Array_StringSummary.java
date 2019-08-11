@@ -430,6 +430,40 @@ public class Array_StringSummary {
     }
 
     /**
+     * LeetCode42 接雨水, 问最多能接多少个格子的水, 两边的边界不考虑
+     */
+    public static int trap(int[] h) {
+        if (h==null || h.length<3) {
+            return 0;
+        }
+        int[] leftMax = new int[h.length];
+        int[] rightMax = new int[h.length];
+        int max = h[0];
+        for (int i = 1; i < h.length - 1; i++) {
+            if (max > h[i]) {
+                leftMax[i] = max;
+            } else {
+                max = h[i];
+            }
+        }
+        max = h[h.length-1];
+        for (int i = h.length-2; i >= 0; i--) {
+            if (max > h[i]) {
+                rightMax[i] = max;
+            } else {
+                max = h[i];
+            }
+        }
+
+        int rtn = 0;
+        for (int i = 1; i < h.length - 1; i++) {
+            if (leftMax[i]!=0 && rightMax[i]!=0) {
+                rtn += Math.min(leftMax[i], rightMax[i]) - h[i];
+            }
+        }
+        return rtn;
+    }
+    /**
      * LeetCode76 最小覆盖子串
      * 1. 注意到题目的关键："所有字母的最小子串"，也就是说两个串都只能是字母。
      2. 于是，可以开辟一个大小为64的数组，来存放数组中字母的频率(Frequency)。准确的说，

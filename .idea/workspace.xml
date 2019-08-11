@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4f026551-ef88-4ec9-a052-76fd74ef1373" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/Array_StringSummary.java" afterPath="$PROJECT_DIR$/src/Array_StringSummary.java" />
-      <change beforePath="$PROJECT_DIR$/src/LinkedTreeSummary.java" afterPath="$PROJECT_DIR$/src/LinkedTreeSummary.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -95,8 +94,8 @@
       <file leaf-file-name="Array_StringSummary.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Array_StringSummary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="583">
-              <caret line="449" column="19" lean-forward="true" selection-start-line="449" selection-start-column="19" selection-end-line="449" selection-end-column="19" />
+            <state relative-caret-position="540">
+              <caret line="434" column="36" lean-forward="false" selection-start-line="434" selection-start-column="36" selection-end-line="434" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#qsort#0;class#Array_StringSummary#0" expanded="false" />
@@ -121,8 +120,9 @@
                 <element signature="method#longestSubString#0;class#Array_StringSummary#0" expanded="false" />
                 <element signature="method#longestSubStr#0;class#Array_StringSummary#0" expanded="false" />
                 <element signature="method#maxArea#0;class#Array_StringSummary#0" expanded="false" />
+                <element signature="method#trap#0;class#Array_StringSummary#0" expanded="false" />
                 <element signature="method#minWindow#0;class#Array_StringSummary#0" expanded="false" />
-                <element signature="e#16046#16102#0" expanded="false" />
+                <element signature="e#16964#17020#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -638,7 +638,7 @@
           <option name="timeStamp" value="64" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="65" />
+      <option name="time" value="66" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1107,8 +1107,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Array_StringSummary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="449" column="19" lean-forward="true" selection-start-line="449" selection-start-column="19" selection-end-line="449" selection-end-column="19" />
+        <state relative-caret-position="540">
+          <caret line="434" column="36" lean-forward="false" selection-start-line="434" selection-start-column="36" selection-end-line="434" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#qsort#0;class#Array_StringSummary#0" expanded="false" />
@@ -1133,8 +1133,9 @@
             <element signature="method#longestSubString#0;class#Array_StringSummary#0" expanded="false" />
             <element signature="method#longestSubStr#0;class#Array_StringSummary#0" expanded="false" />
             <element signature="method#maxArea#0;class#Array_StringSummary#0" expanded="false" />
+            <element signature="method#trap#0;class#Array_StringSummary#0" expanded="false" />
             <element signature="method#minWindow#0;class#Array_StringSummary#0" expanded="false" />
-            <element signature="e#16046#16102#0" expanded="false" />
+            <element signature="e#16964#17020#0" expanded="false" />
           </folding>
         </state>
       </provider>
