@@ -21,8 +21,6 @@ public class LinkedTreeSummary {
         }
     }
 
-    private int KthNode_index = 0;
-
     //=============================================Java 二叉树的几种遍历=============================================
     public void preOrder(TreeNode root) {
         /**
@@ -157,6 +155,10 @@ public class LinkedTreeSummary {
     }
 
 
+    /**
+     * 找到第k大的元素
+     */
+    private int KthNode_index = 0;
     public TreeNode findKthNode(TreeNode root, int k) {
         if (root != null) { //中序遍历寻找第k个
             TreeNode node = findKthNode(root.left, k);
@@ -456,7 +458,6 @@ public class LinkedTreeSummary {
         }
         return res;
     }
-
 
 
 
