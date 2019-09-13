@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f026551-ef88-4ec9-a052-76fd74ef1373" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/datastructure/Array_StringSummary.class" afterPath="$PROJECT_DIR$/out/production/datastructure/Array_StringSummary.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/datastructure/LinkedTreeSummary$LinkedTreePostOrderNode.class" afterPath="$PROJECT_DIR$/out/production/datastructure/LinkedTreeSummary$LinkedTreePostOrderNode.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/datastructure/LinkedTreeSummary.class" afterPath="$PROJECT_DIR$/out/production/datastructure/LinkedTreeSummary.class" />
-      <change beforePath="$PROJECT_DIR$/src/LinkedTreeSummary.java" afterPath="$PROJECT_DIR$/src/LinkedTreeSummary.java" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructure/No2$node.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructure/No2.class" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,7 +20,44 @@
     <SUITE FILE_PATH="coverage/datastructure$test_360_1.coverage" NAME="test_360_1 Coverage Results" MODIFIED="1522499640499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Array_StringSummary.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Array_StringSummary.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="206" column="5" lean-forward="true" selection-start-line="206" selection-start-column="5" selection-end-line="206" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#main#0;class#Array_StringSummary#0" expanded="false" />
+                <element signature="method#qsort#0;class#Array_StringSummary#0" expanded="false" />
+                <element signature="method#partition#0;class#Array_StringSummary#0" expanded="false" />
+                <element signature="method#merge_sort#0;class#Array_StringSummary#0" expanded="false" />
+                <element signature="method#merge#0;class#Array_StringSummary#0" expanded="false" />
+                <element signature="method#bubbleSort#0;class#Array_StringSummary#0" expanded="false" />
+                <element signature="method#selectSort#0;class#Array_StringSummary#0" expanded="false" />
+                <element signature="method#binarySearch_Rec#0;class#Array_StringSummary#0" expanded="false" />
+                <element signature="method#binarySearch#0;class#Array_StringSummary#0" expanded="false" />
+                <element signature="method#MaxSubSum_1#0;class#Array_StringSummary#0" expanded="false" />
+                <element signature="method#MaxSubSum_2#0;class#Array_StringSummary#0" expanded="false" />
+                <element signature="method#MaxSubSum_3#0;class#Array_StringSummary#0" expanded="false" />
+                <element signature="method#MaxSubSum2D#0;class#Array_StringSummary#0" expanded="false" />
+                <element signature="method#BC#0;class#Array_StringSummary#0" expanded="false" />
+                <element signature="method#RightShift#0;class#Array_StringSummary#0" expanded="false" />
+                <element signature="method#Reverse#0;class#Array_StringSummary#0" expanded="false" />
+                <element signature="method#s1RightShiftS2#0;class#Array_StringSummary#0" expanded="false" />
+                <element signature="method#calculateStrDistance_Rec#0;class#Array_StringSummary#0" expanded="false" />
+                <element signature="method#calculateStrDistance#0;class#Array_StringSummary#0" expanded="false" />
+                <element signature="method#longestSubStr#0;class#Array_StringSummary#0" expanded="false" />
+                <element signature="method#maxArea#0;class#Array_StringSummary#0" expanded="false" />
+                <element signature="method#trap#0;class#Array_StringSummary#0" expanded="false" />
+                <element signature="method#minWindow#0;class#Array_StringSummary#0" expanded="false" />
+                <element signature="e#16964#17020#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -90,8 +124,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1079" />
-    <option name="y" value="228" />
+    <option name="x" value="929" />
+    <option name="y" value="332" />
     <option name="width" value="1094" />
     <option name="height" value="934" />
   </component>
@@ -178,7 +212,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.No2">
+  <component name="RunManager" selected="Application.Array_StringSummary">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -354,8 +388,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.No2" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Array_StringSummary" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Array_StringSummary" />
+        <item index="1" class="java.lang.String" itemvalue="Application.No2" />
         <item index="2" class="java.lang.String" itemvalue="Application.LinkedTreeSummaryTest" />
         <item index="3" class="java.lang.String" itemvalue="Application.LinkedListSummary" />
         <item index="4" class="java.lang.String" itemvalue="Application.BinarySearchTreeTest" />
@@ -401,21 +435,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1079" y="228" width="1094" height="934" extended-state="0" />
+    <frame x="929" y="332" width="1094" height="934" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959184" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924336" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24473068" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24469413" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22533849" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22533849" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959481" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -428,7 +464,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959184" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995194" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -860,39 +895,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Array_StringSummary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3725">
-          <caret line="395" column="7" lean-forward="false" selection-start-line="395" selection-start-column="7" selection-end-line="395" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#qsort#0;class#Array_StringSummary#0" expanded="false" />
-            <element signature="method#partition#0;class#Array_StringSummary#0" expanded="false" />
-            <element signature="method#merge_sort#0;class#Array_StringSummary#0" expanded="false" />
-            <element signature="method#merge#0;class#Array_StringSummary#0" expanded="false" />
-            <element signature="method#bubbleSort#0;class#Array_StringSummary#0" expanded="false" />
-            <element signature="method#selectSort#0;class#Array_StringSummary#0" expanded="false" />
-            <element signature="method#binarySearch_Rec#0;class#Array_StringSummary#0" expanded="false" />
-            <element signature="method#binarySearch#0;class#Array_StringSummary#0" expanded="false" />
-            <element signature="method#MaxSubSum_1#0;class#Array_StringSummary#0" expanded="false" />
-            <element signature="method#MaxSubSum_2#0;class#Array_StringSummary#0" expanded="false" />
-            <element signature="method#MaxSubSum_3#0;class#Array_StringSummary#0" expanded="false" />
-            <element signature="method#MaxSubSum2D#0;class#Array_StringSummary#0" expanded="false" />
-            <element signature="method#BC#0;class#Array_StringSummary#0" expanded="false" />
-            <element signature="method#RightShift#0;class#Array_StringSummary#0" expanded="false" />
-            <element signature="method#Reverse#0;class#Array_StringSummary#0" expanded="false" />
-            <element signature="method#s1RightShiftS2#0;class#Array_StringSummary#0" expanded="false" />
-            <element signature="method#calculateStrDistance_Rec#0;class#Array_StringSummary#0" expanded="false" />
-            <element signature="method#calculateStrDistance#0;class#Array_StringSummary#0" expanded="false" />
-            <element signature="method#longestSubStr#0;class#Array_StringSummary#0" expanded="false" />
-            <element signature="method#maxArea#0;class#Array_StringSummary#0" expanded="false" />
-            <element signature="method#trap#0;class#Array_StringSummary#0" expanded="false" />
-            <element signature="method#minWindow#0;class#Array_StringSummary#0" expanded="false" />
-            <element signature="e#16964#17020#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/No2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -975,6 +977,40 @@
         <state relative-caret-position="650">
           <caret line="26" column="56" lean-forward="true" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Array_StringSummary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="206" column="5" lean-forward="true" selection-start-line="206" selection-start-column="5" selection-end-line="206" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#Array_StringSummary#0" expanded="false" />
+            <element signature="method#qsort#0;class#Array_StringSummary#0" expanded="false" />
+            <element signature="method#partition#0;class#Array_StringSummary#0" expanded="false" />
+            <element signature="method#merge_sort#0;class#Array_StringSummary#0" expanded="false" />
+            <element signature="method#merge#0;class#Array_StringSummary#0" expanded="false" />
+            <element signature="method#bubbleSort#0;class#Array_StringSummary#0" expanded="false" />
+            <element signature="method#selectSort#0;class#Array_StringSummary#0" expanded="false" />
+            <element signature="method#binarySearch_Rec#0;class#Array_StringSummary#0" expanded="false" />
+            <element signature="method#binarySearch#0;class#Array_StringSummary#0" expanded="false" />
+            <element signature="method#MaxSubSum_1#0;class#Array_StringSummary#0" expanded="false" />
+            <element signature="method#MaxSubSum_2#0;class#Array_StringSummary#0" expanded="false" />
+            <element signature="method#MaxSubSum_3#0;class#Array_StringSummary#0" expanded="false" />
+            <element signature="method#MaxSubSum2D#0;class#Array_StringSummary#0" expanded="false" />
+            <element signature="method#BC#0;class#Array_StringSummary#0" expanded="false" />
+            <element signature="method#RightShift#0;class#Array_StringSummary#0" expanded="false" />
+            <element signature="method#Reverse#0;class#Array_StringSummary#0" expanded="false" />
+            <element signature="method#s1RightShiftS2#0;class#Array_StringSummary#0" expanded="false" />
+            <element signature="method#calculateStrDistance_Rec#0;class#Array_StringSummary#0" expanded="false" />
+            <element signature="method#calculateStrDistance#0;class#Array_StringSummary#0" expanded="false" />
+            <element signature="method#longestSubStr#0;class#Array_StringSummary#0" expanded="false" />
+            <element signature="method#maxArea#0;class#Array_StringSummary#0" expanded="false" />
+            <element signature="method#trap#0;class#Array_StringSummary#0" expanded="false" />
+            <element signature="method#minWindow#0;class#Array_StringSummary#0" expanded="false" />
+            <element signature="e#16964#17020#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
